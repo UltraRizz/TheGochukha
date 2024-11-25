@@ -70,6 +70,48 @@ body {
     z-index: 3;
 }
 
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #363636;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #c9c9c9;
+    transition: color 0.3s ease;
+}
+.content-section {
+    background-color: #363636;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section img {
+    max-width: 700px;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+
+.content-section p {
+    max-width: 500px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #F1EBDF;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-logo {
