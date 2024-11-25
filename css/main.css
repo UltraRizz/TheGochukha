@@ -6,14 +6,14 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 1.6;
     background-color: #949494;
 }
 
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 85vh;
     background: url('../assets/img/Hero.png') no-repeat center center/cover; 
     position: relative;
     display: flex;
@@ -49,12 +49,13 @@ body {
     margin-top: -3rem;
 }
 .name h1 {
-    font-size: 5rem; 
+    font-size: 7rem; 
     color: #c9c9c9;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     justify-content: center;
     text-align: center;
+    margin-bottom: -4rem;
 }
 
 
@@ -64,6 +65,49 @@ body {
     left: 20px;
     font-size: 1rem;
     color: #fff;    
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+.Text{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1rem;
+    color: #fff;    
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+.menu1 {
+    position: absolute;
+    top: 40rem;
+    left: 20px;
+    font-size: 1rem;
+    color: #fff;    
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+.Text1{
+    position: absolute;
+    top: 40rem;
+    right: 20px;
+    font-size: 1rem;
+    color: #fff;    
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+.divider{
+    position: absolute;
+    top: -50px;
+    right: 45%;
+    font-size: 1rem;  
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -91,7 +135,6 @@ body {
     text-decoration: none;
     font-size: 15px;
     color: #c9c9c9;
-    transition: color 0.3s ease;
 }
 .content-section {
     background-color: #363636;;
@@ -104,6 +147,7 @@ body {
     max-width: 700px;
     height: 500px;
     margin-bottom: 2rem;
+    margin-right: -6rem;
 }
 
 .content-section p {
@@ -111,6 +155,13 @@ body {
     font-size: 24px;
     line-height: 1.5;
     color: #F1EBDF;
+}
+
+.divider1{
+    width: 70px;
+    height: auto;
+    margin-bottom: -2rem;
+    margin-top: -2rem;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
