@@ -253,11 +253,62 @@ body {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+
     .hero-logo {
-        width: 180px;
+        max-width: 200px;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .name h1 {
+        font-size: 2rem;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .dining h1 {
+        font-size: 1.5rem;
+    }
+
+    .dining h5, .dining p {
+        font-size: 0.9rem;
+    }
+
+    .room-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .name h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-section p {
+        font-size: 0.8rem;
+    }
+
+    .dining h1 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 5px 15px;
     }
 }
