@@ -15,9 +15,26 @@
 </head>
 
 <body>
-    <div class="menu">MENU</div>
-    <img src="../TheGochukha/assets/img/Band mark 1.png" alt="" class="divider">
-    <div class="Text">The Gochukha</div>
+
+    <!-- Sticky Navigation -->
+    <section class="primary-nav">
+        <div class="menu">MENU</div>
+        <img src="../TheGochukha/assets/img/Band mark 1.png" alt="" class="divider">
+        <div class="Text">The Gochukha</div>
+    </section>
+
+    <!-- Navigation on Scroll -->
+    <section class="sticky-nav hidden">
+        <hr>
+        <ul>
+            <li><a href="#home">ACCOMMODATION</a></li>
+            <li><a href="#about">DINING</a></li>
+            <li><a href="#services">WELLNESS</a></li>
+            <li><a href="#rooms">CAFE</a></li>
+            <li><a href="#contact">BAR</a></li>
+            <li><a href="#contact">RESTAURANT</a></li>
+        </ul>
+    </section>
 
     <section class="hero">
         <div class="hero-overlay"></div>
@@ -30,32 +47,6 @@
     <div class="name">
         <h1>GOCHUKHA HOTEL</h1>
     </div>
-
-    <!-- Sticky Navigation -->
-    <section class="navigation primary-nav">
-        <hr>
-        <ul>
-            <li><a href="#home">ACCOMODATION</a></li>
-            <li><a href="#about">DINING</a></li>
-            <li><a href="#services">WELLENESS</a></li>
-            <li><a href="#rooms">CAFE</a></li>
-            <li><a href="#contact">BAR</a></li>
-            <li><a href="#contact">RESTURANT</a></li>
-        </ul>
-    </section>
-
-    <!-- Navigation on Scroll -->
-    <section class="navigation sticky-nav hidden">
-        <hr>
-        <ul>
-            <li><a href="#home">ACCOMODATION</a></li>
-            <li><a href="#about">DINING</a></li>
-            <li><a href="#services">WELLENESS</a></li>
-            <li><a href="#rooms">CAFE</a></li>
-            <li><a href="#contact">BAR</a></li>
-            <li><a href="#contact">RESTURANT</a></li>
-        </ul>
-    </section>
 
     <section class="content-section">
         <p>
@@ -91,5 +82,7 @@
         <button class="cta-button">Explore Our Dining Options</button>
     </section>
 </body>
+<script src="./assets/js/nav.js">
+</script>
 
 </html>
