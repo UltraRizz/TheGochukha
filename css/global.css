@@ -1,3 +1,14 @@
+/* For all scrollable elements */
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in WebKit-based browsers (Chrome, Edge, Safari) */
+}
+
+html,
+body {
+  -ms-overflow-style: none; /* Hides the scrollbar in Internet Explorer/Edge */
+  scrollbar-width: none; /* Hides the scrollbar in Firefox */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +32,6 @@
 /* Hero Section */
 .hero {
   height: 105vh;
-  background: url("../assets/img/Hero.png") no-repeat center center/cover;
   position: relative;
   display: flex;
   justify-content: center;
