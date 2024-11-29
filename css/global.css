@@ -113,6 +113,7 @@
 
 /* Primary Navigation */
 .primary-nav {
+  padding-inline: 1%;
   text-align: center;
   position: fixed;
   top: 0;
