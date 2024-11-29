@@ -1,14 +1,6 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: "Raleway", sans-serif;
-    line-height: 1.6;
-    background-color: #949494;
+    background:var(--bg-color)
 }
 
 /* Hero Section */
@@ -44,13 +36,13 @@ body {
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size:var(---p-font);
+    color: var(--text-color);
     margin-top: -3rem;
 }
 .name h1 {
     font-size: 7rem; 
-    color: #c9c9c9;
+    color: var(--text-color1);
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     justify-content: center;
