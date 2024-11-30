@@ -203,3 +203,89 @@ body {
 .visible {
   display: block !important;
 }
+
+.footer {
+  max-width: 2000px;
+  width: 100%;
+  background: #3C3C3C;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.footer-row .footer-col h4 {
+  color: #DAB44D;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer-row .footer-col h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem ;
+  width: 30%;
+}
+.footer-row .footer-col h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 40%;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+/*  
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+} */
