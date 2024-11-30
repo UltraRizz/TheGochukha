@@ -19,42 +19,51 @@
 <body>
     <!-- Sticky Navigation -->
     <section class="primary-nav">
-        <div class="close">CLOSE</div>
-        <div class="Text">THE GOCHUKHA</div>
+        <div class="close" id="closeButton">CLOSE</div>
+        <div class="Text"><a href="index.html">THE GOCHUKHA</a></div>
     </section>
     <section class="content-section">
         <div class="left">
-            <div class="first">
-                <h5>MENU</h5>
-                <a href="#">
-                    <h2>HOME</h2>
-                </a><a href="#">
-                    <h2>ROOMS</h2>
-                </a><a href="#">
-                    <h2>RESTAURANT</h2>
-                </a><a href="#">
-                    <h2>CAFE</h2>
-                </a><a href="#">
-                    <h2>BAR</h2>
-                </a><a href="#">
-                    <h2>EVENTS</h2>
-                </a><a href="#">
-                    <h2>BOOKING</h2>
-                </a><a href="#">
-                    <h2>ABOUT US</h2>
-                </a><a href="#">
-                    <h2>CONTACT US</h2>
-                </a>
+            <div class="menu">
+                <div class="first">
+                    <h5>MENU</h5>
+                    <a href="index.html">
+                        <h2>HOME</h2>
+                    </a><a href="rooms.html">
+                        <h2>ROOMS</h2>
+                    </a><a href="#">
+                        <h2>RESTAURANT</h2>
+                    </a><a href="#">
+                        <h2>CAFE</h2>
+                    </a><a href="#">
+                        <h2>BAR</h2>
+                    </a><a href="#">
+                        <h2>EVENTS</h2>
+                    </a><a href="#">
+                        <h2>BOOKING</h2>
+                    </a><a href="about.html">
+                        <h2>ABOUT US</h2>
+                    </a><a href="#">
+                        <h2>CONTACT US</h2>
+                    </a>
+                </div>
+                <div class="second">
+                    <h5>SOCIAL MEDIA</h5>
+                    <div class="socials">
+                        <a href="https://www.instagram.com" target="_blank" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" class="social-link"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="second">
-                <h5>SOCIAL MEDIA</h5>
-                <div class="socials">
-                    <a href="https://www.instagram.com" target="_blank" class="social-link"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com" target="_blank" class="social-link"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i
-                            class="fab fa-whatsapp"></i></a>
+            <div class="more">
+                <h5>MORE</h5>
+                <div class="more-links">
+                    <a href="#">Conference</a>
+                    <a href="#">Gallery</a>
                 </div>
             </div>
         </div>
@@ -63,5 +72,18 @@
         </div>
     </section>
 </body>
+<script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+        // Check if there is a referrer
+        if (document.referrer) {
+            // Redirect to the referring page
+            window.location.href = document.referrer;
+        } else {
+            // Default behavior if no referrer (e.g., user accesses directly)
+            alert("No referring page found. Redirecting to homepage.");
+            window.location.href = "index.html"; // Adjust to your default homepage
+        }
+    });
+</script>
 
 </html>
