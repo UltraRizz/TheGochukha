@@ -39,7 +39,7 @@ body {
   align-self: start;
   margin-top: 6%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 2%;
   gap: 2rem;
 }
@@ -50,19 +50,24 @@ body {
   margin: 0;
 }
 
-.content-section .left .first a h2 {
+.content-section .left .menu .first a h2 {
   font-size: 2.5rem;
   color: #ffffff;
   text-decoration: none;
   font-weight: 400;
-  margin-top: 2%;
+  margin-top: 5%;
+  transition: color 0.5s;
 }
-.content-section .left .first a h2:hover {
+.content-section .left .menu .first a h2:hover {
   color: #000000;
 }
 
+.menu .second {
+  margin-top: 10%;
+}
+
 .socials {
-  margin-top: 1%;
+  margin-top: 5%;
   display: flex;
   gap: 2rem; /* Spacing between icons */
 }
@@ -75,6 +80,24 @@ body {
 }
 
 .social-link:hover {
+  color: #000000; /* Change color on hover */
+}
+.more {
+  margin-right: 10%;
+}
+.more-links {
+  margin-top: 1%;
+  display: flex; /* Spacing between icons */
+  flex-direction: column;
+}
+.more-links a {
+  margin-top: 5%;
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  transition: color 0.3s; /* Smooth hover effect */
+}
+.more-links a:hover {
   color: #000000; /* Change color on hover */
 }
 
