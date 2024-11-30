@@ -104,7 +104,7 @@ body {
   z-index: 3;
 }
 
-.primary-nav .Text {
+.primary-nav .Text a {
   font-size: 1rem;
   color: #ffffff;
   border-radius: 5px;

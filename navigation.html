@@ -19,17 +19,17 @@
 <body>
     <!-- Sticky Navigation -->
     <section class="primary-nav">
-        <div class="close">CLOSE</div>
-        <div class="Text">THE GOCHUKHA</div>
+        <div class="close" id="closeButton">CLOSE</div>
+        <div class="Text"><a href="index.html">THE GOCHUKHA</a></div>
     </section>
     <section class="content-section">
         <div class="left">
             <div class="menu">
                 <div class="first">
                     <h5>MENU</h5>
-                    <a href="#">
+                    <a href="index.html">
                         <h2>HOME</h2>
-                    </a><a href="#">
+                    </a><a href="rooms.html">
                         <h2>ROOMS</h2>
                     </a><a href="#">
                         <h2>RESTAURANT</h2>
@@ -41,7 +41,7 @@
                         <h2>EVENTS</h2>
                     </a><a href="#">
                         <h2>BOOKING</h2>
-                    </a><a href="#">
+                    </a><a href="about.html">
                         <h2>ABOUT US</h2>
                     </a><a href="#">
                         <h2>CONTACT US</h2>
@@ -72,5 +72,18 @@
         </div>
     </section>
 </body>
+<script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+        // Check if there is a referrer
+        if (document.referrer) {
+            // Redirect to the referring page
+            window.location.href = document.referrer;
+        } else {
+            // Default behavior if no referrer (e.g., user accesses directly)
+            alert("No referring page found. Redirecting to homepage.");
+            window.location.href = "index.html"; // Adjust to your default homepage
+        }
+    });
+</script>
 
 </html>
