@@ -207,27 +207,55 @@ body {
 .footer {
   max-width: 2000px;
   width: 100%;
-  background: #3C3C3C;
+  background: #3c3c3c;
+}
+.footer > h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-block: 0.5rem;
+  width: 100%;
+  letter-spacing: 0.3rem;
+  text-align: center;
 }
 
 .footer .footer-row {
+  height: 50vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 5rem;
 }
 
-.footer-row .footer-col h4 {
-  color: #DAB44D;
+.footer-col {
+  width: calc(100% / 3);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-col:first-child {
+  text-align: start;
+  border-right: 1px solid #707070;
+}
+.footer-col:nth-child(2),
+.footer-col:last-child {
+  text-align: center;
+}
+.footer-col:last-child {
+  border-left: 1px solid #707070;
+}
+
+.footer-col h4 {
+  color: #dab44d;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 .footer-row .footer-col h3 {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 2rem ;
+  margin-bottom: 2rem;
   width: 30%;
 }
 .footer-row .footer-col h2 {
@@ -235,6 +263,11 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   width: 40%;
+}
+
+.footer-col img {
+  width: 60%;
+  object-fit: contain;
 }
 
 .footer-col .links {
