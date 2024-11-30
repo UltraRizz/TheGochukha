@@ -3,19 +3,29 @@ body {
   overflow-y: hidden;
 }
 
+/* Close Button */
 .close {
   position: relative;
   font-size: 16px; /* Adjust size as needed */
   color: #ffffff; /* Text color */
-  cursor: pointer;
+  cursor: pointer; /* Indicate it's clickable */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
 }
 
 .close::before {
-  content: "✖"; /* The "X" character */
-  margin-right: 8px; /* Add spacing between "X" and text */
-  font-size: inherit; /* Matches the font size of the .close class */
-  color: inherit; /* Matches the color of the .close class */
+  content: "✖";
+  margin-right: 8px;
+  font-size: inherit;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.close:hover::before {
+  transform: rotate(360deg) scale(1.2);
+  color: #000000;
+}
+
 .dividerN {
   width: 10%;
   display: flex;
@@ -44,6 +54,14 @@ body {
   gap: 2rem;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+
 .content-section .left h5 {
   font-size: 1.2rem;
   color: #ffffff;
@@ -64,6 +82,7 @@ body {
 
 .menu .second {
   margin-top: 10%;
+  width: 100%;
 }
 
 .socials {

@@ -20,7 +20,7 @@ body {
 
 :root {
   --bg-color: #949494;
-  --text-color: #ffff;
+  --text-color: #fff;
   --text-color1: #f1ebd5;
   --main-color: #3c3c3c;
   --secondary-color: #d8d8d8;
@@ -52,12 +52,14 @@ body {
 .hero-content {
   z-index: 2; /* Ensures content is above the overlay */
   position: relative;
+  margin: 0 auto;
 }
 
 .hero-logo {
   width: 781px;
   max-width: 100%;
   margin-bottom: 1rem;
+  margin: 0 auto;
 }
 
 .hero p {
@@ -74,7 +76,7 @@ body {
   letter-spacing: 4rem;
   font-weight: bold; /* Optional, adds emphasis to the text */
   z-index: 100;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: 5px;
   opacity: 0.5;
@@ -102,6 +104,20 @@ body {
   border-radius: 5px;
   cursor: pointer;
   z-index: 3;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: rotate(90deg) scale(1.4);
+  color: #969696;
 }
 
 .primary-nav .Text a {
@@ -115,10 +131,13 @@ body {
 
 /* Divider */
 .divider {
-  width: 10%;
+  width: 4%;
   border-radius: 5px;
   cursor: pointer;
   z-index: 100;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Primary Navigation */
@@ -163,15 +182,16 @@ body {
 }
 
 .sticky-nav ul li a {
-  font-size: 16px;
-  color: white;
+  font-size: 1.1rem;
+  color: #9c9c9c;
   text-transform: uppercase;
-  margin: 0 20px;
+  margin: 0 30px;
   transition: color 0.3s ease;
+  letter-spacing: 0.2rem;
 }
 
 .sticky-nav ul li a:hover {
-  color: #f0a500; /* Highlight color */
+  color: #fff; /* Highlight color */
 }
 
 /* Hidden Utility Class */
