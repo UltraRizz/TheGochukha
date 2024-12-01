@@ -66,3 +66,45 @@ document.addEventListener("click", (event) => {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const progressCircle = document.querySelector(".progress-circle .progress");
+  const radius = progressCircle.getAttribute("r"); // Get the radius from the SVG element
+  const circleLength = 2 * Math.PI * radius; // Calculate circumference dynamically
+  const scrollProgressContainer = document.querySelector(".scroll-progress");
+
+  // Set initial stroke properties for the circle
+  progressCircle.style.strokeDasharray = circleLength; // Circumference
+  progressCircle.style.strokeDashoffset = circleLength; // Start at 100% hidden
+
+  // Set initial visibility of the scroll progress container
+  scrollProgressContainer.style.opacity = "0"; // Hidden initially
+  scrollProgressContainer.style.transition = "opacity 0.3s"; // Smooth transition for visibility
+
+  // Function to update progress
+  const updateProgress = () => {
+    const scrollTop = window.scrollY; // Current scroll position
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
+    const progress = scrollTop / docHeight; // Progress as a percentage
+
+    // Update progress values for the circle
+    const circleOffset = circleLength - progress * circleLength;
+    progressCircle.style.strokeDashoffset = circleOffset;
+
+    // Show the progress circle and arrow after a certain scroll length (e.g., 200px)
+    if (scrollTop > 500) {
+      scrollProgressContainer.style.opacity = "1"; // Show when scroll is greater than 200px
+    } else {
+      scrollProgressContainer.style.opacity = "0"; // Hide when scroll is less than 200px
+    }
+  };
+
+  // Scroll to top on click
+  scrollProgressContainer.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Update progress on scroll
+  window.addEventListener("scroll", updateProgress);
+});

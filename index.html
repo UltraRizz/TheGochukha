@@ -32,10 +32,10 @@
     <section class="sticky-nav hidden">
         <hr>
         <ul>
-            <li><a href="#home">ACCOMMODATION</a></li>
-            <li><a href="restaurant.html">RESTAURANT</a></li>
+            <li><a href="#rooms">ACCOMMODATION</a></li>
+            <li><a href="#dining">RESTAURANT</a></li>
             <li><a href="#services">BAR</a></li>
-            <li><a href="#rooms">CAFÉ</a></li>
+            <li><a href="#cafe">CAFÉ</a></li>
             <li><a href="#contact">EVENTS</a></li>
             <li><a href="#contact">BOOKING</a></li>
         </ul>
@@ -110,13 +110,23 @@
     </div>
 
     <section class="content-section">
-        <p>
-            Gochukha Brings Bhutanese heritage offering a serene sancituary of comfort and refinements
-        </p>
-        <img src="./assets/img/section1.png" alt="Gochukha Hotel" />
+        <div class="left">
+            <div class="img">
+                <img src="./assets/img/eventImg.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <h4>UPCOMING EVENTS</h4>
+            <h2>FOOD TASTING</h2>
+            <p>
+                Join us for an exclusive food tasting event where you’ll savor handpicked delicacies crafted to delight
+                your palate.
+            </p>
+            <button class="cta-button">Discover Now</button>
+        </div>
     </section>
 
-    <section class="rooms">
+    <section class="rooms" id="rooms">
         <div class="room-types">
             <div class="room">
                 <div class="room-overlay">
@@ -145,20 +155,21 @@
     <section class="slider-container">
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slider-1" src="./assets/img/slider3.png" alt="Slide 1">
-                <img id="slider-2" src="./assets/img/slider2.png" alt="Slide 2">
-                <img id="slider-3" src="./assets/img/slider3.png" alt="Slide 3">
+                <img src="./assets/img/slider1.png" alt="Slide 1">
+                <img src="./assets/img/slider2.png" alt="Slide 2">
+                <img src="./assets/img/slider3.png" alt="Slide 3">
             </div>
-            <div class="slider-nav">
-                <a href="#slider-1"></a>
-                <a href="#slider-2"></a>
-                <a href="#slider-3"></a>
-            </div>
+        </div>
+        <div class="slider-nav">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
         </div>
     </section>
 
-    <section class="cusin-section">
-        <img src="./assets/img/section1.png" alt="Gochukha Hotel" />
+
+    <section class="cusin-section" id="dining">
+        <img src="./assets/img/cuisine.png" alt="Gochukha Hotel" />
         <div class="text-content">
             <h4>CUSINE</h4>
             <h2>SAVOR THE ESSENCE:OUR GOCHUKHA DINING PHILOSOPHY</h2>
@@ -175,7 +186,7 @@
         </div>
     </section>
     <section class="gallery">
-        <img src="./assets/img/room1.png" alt="">
+        <img src="./assets/img/slider2.png" alt="">
         <div class="content">
             <h4>Gallery</h4>
             <h1>Discover Gochukha Through Images</h1>
@@ -189,7 +200,7 @@
 
     </section>
 
-    <section class="cafe-section">
+    <section class="cafe-section" id="cafe">
         <div class="text-content">
             <h4>CUSINE</h4>
             <h2>A TASTE OF GOCHUKHA CAFÉ</h2>
@@ -202,12 +213,29 @@
             </p>
             <button class="cafe-btn">Explore Our Café</button>
         </div>
-        <img src="./assets/img/section1.png" alt="Gochukha Hotel" />
+        <img src="./assets/img/cafe.png" alt="Gochukha Hotel" />
     </section>
 
     <section class="details">
         <img src="./assets/img/bkg.png" alt="">
     </section>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <!-- Circular Progress -->
+        <svg class="progress-circle" width="60" height="60" viewBox="0 0 60 60">
+            <!-- Circular background -->
+            <circle class="bg" cx="30" cy="30" r="28"></circle>
+            <!-- Circular progress -->
+            <circle class="progress" cx="30" cy="30" r="28"></circle>
+        </svg>
+
+        <!-- Upward Caret Arrow (^) -->
+        <svg class="progress-arrow" width="30" height="30" viewBox="0 0 30 30">
+            <path class="arrow" d="M5 20 L15 10 L25 20" fill="none" stroke="#ff5733" stroke-width="4" />
+        </svg>
+    </div>
+
 
     <section class="footer">
         <h3>Are you ready to stay at GOCHUKHA?</h3>
@@ -223,6 +251,14 @@
                 <h2>Phone +975 - 17123456 </h2>
                 <h2>Phone +975 - 77123456 </h2>
                 <h2>Whatsapp Reservation 17123456 </h2>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-link"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
 
             </div>
             <div class="footer-col">
@@ -257,5 +293,8 @@
 </body>
 <script src="./scripts/nav.js">
 </script>
+<script src="./scripts/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </html>
