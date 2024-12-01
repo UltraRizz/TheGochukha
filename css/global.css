@@ -317,7 +317,7 @@ body {
   display: block;
   opacity: 1;
   transform: translateX(0);
-  animation: fadeSlideIn 1s ease forwards;
+  animation: fadeSlideIn 0.7s ease forwards;
 }
 
 @keyframes fadeSlideIn {
@@ -343,7 +343,7 @@ body {
 }
 
 .hidden-nav.closing {
-  animation: fadeSlideOut 1s ease forwards;
+  animation: fadeSlideOut 0.7s ease forwards;
 }
 
 /* Animation for Menu Items */
