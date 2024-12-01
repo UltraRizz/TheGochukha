@@ -3,6 +3,10 @@
   display: none; /* Hides the scrollbar in WebKit-based browsers (Chrome, Edge, Safari) */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   -ms-overflow-style: none; /* Hides the scrollbar in Internet Explorer/Edge */
