@@ -297,6 +297,229 @@ body {
   max-width: 300px;
 }
 
+/* navigation */
+.hidden-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #aaaaaa;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hidden-nav.visible {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.hidden-nav.closing {
+  animation: fadeSlideOut 1s ease forwards;
+}
+
+/* Animation for Menu Items */
+.hidden-nav .menu-content h2 {
+  opacity: 0;
+  transform: translateX(-50px); /* Slide in from left */
+  animation: menuItemSlide 2s ease forwards;
+}
+
+.hidden-nav .menu-content h2:nth-child(1) {
+  animation-delay: 0.1s; /* Staggered delays */
+}
+
+.hidden-nav .menu-content h2:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hidden-nav .menu-content h2:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hidden-nav .menu-content h2:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.hidden-nav .menu-content h2:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.hidden-nav .menu-content h2:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.hidden-nav .menu-content h2:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.hidden-nav .menu-content h2:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.hidden-nav .menu-content h2:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+/* Keyframes for Staggered Animation */
+@keyframes menuItemSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Close Button */
+.close {
+  position: relative;
+  font-size: 16px; /* Adjust size as needed */
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+}
+
+.close::before {
+  content: "✖";
+  margin-right: 8px;
+  font-size: inherit;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close:hover::before {
+  transform: rotate(360deg) scale(1.2);
+  color: #000000;
+}
+
+.dividerN {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3c3c;
+  z-index: 100;
+}
+.dividerN img {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.content-section-nav {
+  display: flex;
+  align-items: center;
+}
+
+.content-section-nav .left {
+  width: 100%;
+  align-self: start;
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  gap: 2rem;
+}
+
+.hidden-nav .menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.content-section-nav .left h5 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.content-section-nav .left .menu-content .first a h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  margin-top: 5%;
+  transition: color 0.5s;
+}
+.content-section-nav .left .menu-content .first a h2:hover {
+  color: #000000;
+}
+
+.hidden-nav .menu-content .second {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.socials {
+  margin-top: 5%;
+  display: flex;
+  gap: 2rem; /* Spacing between icons */
+}
+
+.social-link {
+  animation: menuItemSlide 3s ease forwards;
+  text-decoration: none; /* Remove underline */
+  font-size: 2.5rem; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+.social-link:hover {
+  color: #000000; /* Change color on hover */
+}
+.more {
+  margin-right: 10%;
+}
+.more-links {
+  margin-top: 1%;
+  display: flex; /* Spacing between icons */
+  flex-direction: column;
+}
+.more-links a {
+  margin-top: 5%;
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  transition: color 0.3s; /* Smooth hover effect */
+  animation: menuItemSlide 3s ease forwards;
+}
+.more-links a:hover {
+  color: #000000; /* Change color on hover */
+}
+
 /*  
 
 @media (max-width: 768px) {

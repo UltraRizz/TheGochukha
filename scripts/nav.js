@@ -33,3 +33,36 @@ document.addEventListener("scroll", () => {
   // Update the last scroll position
   lastScrollPosition = scrollPosition;
 });
+
+const hiddenNav = document.getElementById("hiddenNav");
+const openButton = document.querySelector(".menu");
+const closeButton = document.getElementById("closeButton");
+
+// Function to open the nav
+openButton.addEventListener("click", () => {
+  hiddenNav.style.display = "block";
+  setTimeout(() => {
+    hiddenNav.classList.add("visible");
+  }, 20);
+});
+
+// Function to close the nav
+const closeNav = () => {
+  hiddenNav.classList.add("closing");
+  setTimeout(() => {
+    hiddenNav.classList.remove("visible", "closing");
+    hiddenNav.style.display = "none";
+  }, 600); // Match the animation duration
+};
+
+// Close when the close button is clicked
+closeButton.addEventListener("click", closeNav);
+
+// Close when clicking outside the nav
+document.addEventListener("click", (event) => {
+  if (!hiddenNav.contains(event.target) && !openButton.contains(event.target)) {
+    if (hiddenNav.classList.contains("visible")) {
+      closeNav();
+    }
+  }
+});
