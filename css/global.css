@@ -299,7 +299,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
-  color: #949494;
 }
 
 .form-group {
@@ -323,7 +322,7 @@ body {
   width: 100%;
   border: none;
   border-bottom: 2px solid #949494;
-  color: #949494;
+  color: #fff;
   background: none;
   padding: 10px;
   font-size: 1.2rem;
@@ -332,10 +331,48 @@ body {
   transition: border-color 0.3s;
 }
 
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #949494;
+  opacity: 1; /* Ensure full opacity for the placeholder text */
+}
+
+/* Styling for the options in the dropdown */
+.form-group select option {
+  color: #949494; /* Set the text color for dropdown options */
+  background-color: #000; /* Optional: Ensure options are visible against dark backgrounds */
+}
+
+/* For the dropdown itself when no value is selected */
+.form-group select {
+  color: #949494; /* Default color for the dropdown text */
+}
+
+.form-group select:focus {
+  color: white; /* Change color when dropdown is active */
+  border-bottom-color: #fff; /* Optional: Highlight border on focus */
+  background: none;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1) grayscale(100%) brightness(50%);
   cursor: pointer;
 }
+
+input[type="date"]::-webkit-datetime-edit {
+  color: #949494; /* Placeholder color */
+}
+/* Styling for the date input text when a value is selected */
+input[type="date"]:valid {
+  color: #fff; /* Selected text color */
+  border-bottom-color: #fff; /* Optional: Highlight border when a date is selected */
+}
+
+/* Focus styling for better interactivity */
+input[type="date"]:focus {
+  border-bottom-color: #fff; /* Border highlight on focus */
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -349,7 +386,7 @@ input[type="number"] {
 
 .form-group input:focus,
 .form-group select:focus {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 /* Styling for Textarea */
@@ -357,6 +394,7 @@ input[type="number"] {
   width: 100%;
   height: 15vh;
   border: 2px solid #949494;
+  color: #fff;
   padding: 10px;
   font-size: 1.2rem;
   background: none;
