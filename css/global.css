@@ -265,6 +265,134 @@ body {
   stroke-width: 2;
   fill: none;
 }
+/* booking form ============================================ */
+.booking-section {
+  padding: 5rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/background.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-section .header {
+  width: 80%;
+  color: #fff;
+  display: flex;
+  justify-content: color;
+  align-items: center;
+  text-align: center;
+}
+.booking-section .header h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.form {
+  width: 80%;
+}
+.booking-form {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: #949494;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #dcdcdc;
+  margin-bottom: 5px;
+}
+
+/* Styling for Inputs and Selects */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #949494;
+  color: #949494;
+  background: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) grayscale(100%) brightness(50%);
+  cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Styling for Textarea */
+#message {
+  width: 100%;
+  height: 15vh;
+  border: 2px solid #949494;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+}
+
+#message:focus {
+  border-color: #fff;
+}
+
+/* Inline Form Groups */
+.form-group.inline {
+  width: 49%;
+  display: inline-block;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Submit Button */
+button {
+  background-color: #212121;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #393939;
+}
 
 /* Footer ============================================ */
 .footer {

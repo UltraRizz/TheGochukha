@@ -216,8 +216,58 @@
         <img src="./assets/img/cafe.png" alt="Gochukha Hotel" />
     </section>
 
-    <section class="details">
-        <img src="./assets/img/bkg.png" alt="">
+    <section class="booking-section" id="booking">
+        <div class="header">
+            <h2>
+                EXPERIENCE GOCHUKHA
+            </h2>
+        </div>
+        <div class="form">
+            <form method="post" class="booking-form" action="mail.php">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone</label>
+                    <input type="tel" id="name" name="visitor_name" placeholder="John Doe"
+                        pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <div class="form-group inline">
+                    <label for="room-selection">Select Room Preference</label>
+                    <select id="room-selection" name="room_preference" required>
+                        <option value="">Choose a Room</option>
+                        <option value="Premium">Premium Deluxe Room</option>
+                        <option value="TwinBed">Deluxe room with Twin Bed</option>
+                        <option value="Conference">Conference Hall</option>
+                    </select>
+                </div>
+                <div class="form-group inline">
+                    <label for="guest">Number of Guest</label>
+                    <input type="number" id="guest-number" name="guest-number" placeholder="Number of Guest" min="1"
+                        required required>
+                </div>
+                <div class="form-group inline">
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="form-group inline">
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Anything Else?</label>
+                    <textarea id="message" name="visitor_message"
+                        placeholder="Tell us anything else that might be important." required></textarea>
+                </div>
+                <button type="submit">Book The Rooms</button>
+            </form>
+        </div>
+
     </section>
 
     <!-- Scroll Progress Indicator -->
