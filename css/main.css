@@ -131,7 +131,7 @@ body {
 }
 
 .room-text {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   bottom: 170px; /* Distance from the bottom */
   left: 60%;
