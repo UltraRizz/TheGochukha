@@ -46,8 +46,9 @@ body {
   font-size: 1.1rem;
   color: #f1ebdf;
   line-height: 1.6;
+  letter-spacing: 0.4rem;
   margin: 0;
-  width: 40%;
+  width: 70%;
 }
 
 .divider1 {
@@ -90,7 +91,7 @@ body {
   padding: 10px 20px;
   font-size: 1rem;
   color: #fff;
-  background-color: #363636; /* Primary button color */
+  background: none; /* Primary button color */
   border: 1px solid white;
   border-radius: 50px;
   cursor: pointer;
@@ -109,6 +110,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .room {
@@ -131,16 +133,27 @@ body {
 }
 
 .room-text {
-  font-family: 'Montserrat', sans-serif;
   position: absolute;
-  bottom: 170px; /* Distance from the bottom */
-  left: 60%;
-  transform: translateX(-70%);
+  bottom: 45%; /* Distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
   color: #fff;
-  padding: 10px 20px;
-  font-size: 2.2rem;
+  padding: 10px 10px;
+  font-size: 3rem;
   text-align: center;
   pointer-events: none; /* Ensures text doesn't interfere with clicks */
+  width: 65%;
+}
+.room-text h1 {
+  font-weight: 200;
+  letter-spacing: 0.4rem;
+}
+
+#room-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15%;
 }
 
 .slider-container {
@@ -165,6 +178,7 @@ body {
 .slider img {
   max-width: 100%;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 .slider-nav {
@@ -295,11 +309,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5rem;
 }
 
 .gallery img {
-  width: 1066px;
-  height: 633px;
+  width: 60%;
   margin-bottom: 2rem;
   margin-right: -6rem;
 }

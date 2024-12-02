@@ -3,12 +3,13 @@ body {
 }
 
 .hero-content {
+  margin-top: 10% !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .hero-content h5 {
   font-size: 1.2rem;
@@ -17,7 +18,7 @@ body {
 }
 
 .hero-content h1 {
-  width: 50%;
+  width: 70%;
   font-size: 5rem;
   color: #fff;
   margin: 0;
@@ -37,6 +38,8 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: start;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .content-section .text-content h5 {
@@ -71,6 +74,7 @@ body {
   text-align: center;
   gap: 1rem;
   color: white;
+  margin: 4rem 0;
 }
 .culinary h5 {
   font-size: 1.2rem;
@@ -131,7 +135,7 @@ body {
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .menu_card_content #content {
@@ -148,6 +152,7 @@ body {
   font-size: 1.2rem;
   color: #fff;
   width: inherit;
+  margin-bottom: 1rem;
 }
 
 .menu_card_content .content a {

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/fragile');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/fragile");
 
 /* For all scrollable elements */
 ::-webkit-scrollbar {
@@ -39,11 +39,22 @@ body {
   --p-font: 1rem;
 }
 
-p{
-  font-family: 'Montserrat', sans-serif;
+p {
+  font-family: "Montserrat", sans-serif;
 }
-h1 , h2{
-  font-family: 'Fragile', sans-serif;
+h1,
+h2 {
+  font-family: "Fragile", sans-serif;
+}
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: none; /* Primary button color */
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
 }
 /* Hero Section */
 .hero {
@@ -68,6 +79,7 @@ h1 , h2{
 .hero-content {
   z-index: 2; /* Ensures content is above the overlay */
   position: relative;
+  bottom: 15%;
   margin: 0 auto;
 }
 
@@ -85,17 +97,20 @@ h1 , h2{
 }
 
 .title {
-  width: 100%;
-  font-size: 11rem;
-  transform: scaleY(1.3); /* Combine scale and translate */
+  max-width: 73%;
+  font-size: 13rem; /* Combine scale and translate */
   text-align: center; /* Center the text */
   letter-spacing: 4rem;
   font-weight: bold; /* Optional, adds emphasis to the text */
   z-index: 100;
   color: rgba(255, 255, 255, 0.1);
   position: absolute;
-  bottom: 5px;
+  bottom: 2rem;
   opacity: 0.5;
+}
+
+.title h1 {
+  transform: scale(1.3, 1.15);
 }
 
 .name {
@@ -105,13 +120,12 @@ h1 , h2{
 
 .name h1 {
   font-size: 7rem;
-  color: #3c3c3c85;
+  color: #3c3c3c51;
   text-transform: uppercase;
-  transform: scaleY(1.3);
-  letter-spacing: 0.8rem;
+  transform: scaleY(1.4);
+  letter-spacing: 4rem;
   text-align: center;
   margin-bottom: 0;
-  text-transform: capitalize;
 }
 
 /* Menu and Text */
@@ -309,16 +323,15 @@ h1 , h2{
   padding: 20px;
   border-radius: 10px;
 }
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
 
 .form-group {
   margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-  color: #dcdcdc;
-  margin-bottom: 5px;
 }
 
 /* Styling for Inputs and Selects */
@@ -426,20 +439,6 @@ input[type="number"] {
 }
 
 /* Submit Button */
-button {
-  background-color: #212121;
-  color: #fff;
-  padding: 15px 20px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #393939;
-}
 
 /* Footer ============================================ */
 .footer {
@@ -708,13 +707,14 @@ button:hover {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .content-section-nav .left h5 {
   font-size: 1.2rem;
   color: #ffffff;
   margin: 0;
+  margin-block: 2rem;
 }
 
 .content-section-nav .left .menu-content .first a h2 {
