@@ -14,6 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,12 +50,12 @@
             <p>a paradise between green land and the blue sky</p>
         </div>
         <div class="title">
-            <h1>GOCHUKHA</h1>
+            <h1 style="font-family: 'Bebas Neue', sans-serif !important;">GOCHUKHA</h1>
         </div>
     </section>
 
     <div class="name">
-        <h1>GOCHUKHA HOTEL</h1>
+        <h1 style="font-family: 'Bebas Neue', sans-serif !important;">GOCHUKHA HOTEL</h1>
     </div>
 
     <!-- Hidden Full-Screen Navigation -->
@@ -116,13 +118,13 @@
             </div>
         </div>
         <div class="right">
-            <h4>UPCOMING EVENTS</h4>
+            <h5>UPCOMING EVENTS</h5>
             <h2>FOOD TASTING</h2>
             <p>
                 Join us for an exclusive food tasting event where you’ll savor handpicked delicacies crafted to delight
                 your palate.
             </p>
-            <button class="cta-button">Discover Now</button>
+            <button class="cta-button">DISCOVER NOW</button>
         </div>
     </section>
 
@@ -131,15 +133,20 @@
             <div class="room">
                 <div class="room-overlay">
                     <img src="./assets/img/room1.png" alt="Deluxe Room">
-                    <div class="room-text">Premium Deluxe Room</div>
+                    <div class="room-text">
+                        <h1>Premium Deluxe Room</h1>
+                    </div>
                 </div>
             </div>
             <div class="room">
                 <div class="room-overlay">
                     <img src="./assets/img/room2.png" alt="Suite Room">
-                    <div class="room-text">Deluxe Room wit twin beds</div>
+                    <div class="room-text">
+                        <h1>Deluxe Room with twin beds</h1>
+                    </div>
                 </div>
             </div>
+            <button class="cta-button" id="room-btn">OUR ACCOMMODATION</button>
         </div>
     </section>
 
@@ -150,7 +157,7 @@
         <p>Nestled in Bhutan’s heart, Gochukha blends traditional charm with modern luxury. More than a hotel, it’s a
             gateway to authentic cultural experiences and exceptional hospitality, creating memories that last a
             lifetime.</p>
-        <button class="cta-button">Discover More About Us</button>
+        <button class="cta-button">OUR STORY</button>
     </section>
     <section class="slider-container">
         <div class="slider-wrapper">
@@ -171,8 +178,8 @@
     <section class="cusin-section" id="dining">
         <img src="./assets/img/cuisine.png" alt="Gochukha Hotel" />
         <div class="text-content">
-            <h4>CUSINE</h4>
-            <h2>SAVOR THE ESSENCE:OUR GOCHUKHA DINING PHILOSOPHY</h2>
+            <h5>CUSINE</h5>
+            <h2>SAVOR THE ESSENCE <br> OUR GOCHUKHA DINING PHILOSOPHY</h2>
             <p>
                 At the newly launched Gochukha Hotel, we redefine dining with a personal touch.
                 While we are yet to open a traditional restaurant, we offer exclusive experiences
@@ -182,7 +189,7 @@
                 authentic as they are unforgettable. At Gochukha, every meal is a celebration of taste
                 and a promise of something truly unique.
             </p>
-            <button class="cus-btn">Discover Our Menu</button>
+            <button class="cus-btn">DISCOVER OUR MENU</button>
         </div>
     </section>
     <section class="gallery">
@@ -195,7 +202,7 @@
                 breathtaking views of Bhutan’s landscapes, and the moments that make every stay unforgettable. Let our
                 visuals inspire
                 your next visit and give you a glimpse of the serene luxury that awaits.</p>
-            <button class="gal-btn">View Our Gallery</button>
+            <button class="gal-btn">VIEW OUR GALLERY</button>
         </div>
 
     </section>
@@ -211,7 +218,7 @@
                 at the spaces and
                 moments that make our café the perfect spot to relax and indulge.
             </p>
-            <button class="cafe-btn">Explore Our Café</button>
+            <button class="cafe-btn">EXPLORE OUR CAFÉ</button>
         </div>
         <img src="./assets/img/cafe.png" alt="Gochukha Hotel" />
     </section>
@@ -223,22 +230,18 @@
             </h2>
         </div>
         <div class="form">
-            <form method="post" class="booking-form" action="mail.php">
+            <form method="post" class="booking-form" action="mail.php" id="bookingForm">
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" pattern=[A-Z\sa-z]{3,20} required>
+                    <input type="text" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <label for="name">Phone</label>
-                    <input type="tel" id="name" name="visitor_name" placeholder="John Doe" required>
+                    <input type="tel" id="pnumber" name="pnumber" placeholder="Phone Number">
                 </div>
-                <div class="form-group inline">
-                    <label for="room-selection">Select Room Preference</label>
-                    <select id="room-selection" name="room_preference" required>
+                <div class=" form-group inline">
+                    <select id="room-selection" name="room_preference">
                         <option value="">Choose a Room</option>
                         <option value="Premium">Premium Deluxe Room</option>
                         <option value="TwinBed">Deluxe room with Twin Bed</option>
@@ -246,24 +249,22 @@
                     </select>
                 </div>
                 <div class="form-group inline">
-                    <label for="guest">Number of Guest</label>
-                    <input type="number" id="guest-number" name="guest-number" placeholder="Number of Guest" min="1"
-                        required required>
+                    <input type="number" id="guest-number" name="guest-number" placeholder="Number of Guest" min="1">
                 </div>
                 <div class="form-group inline">
                     <label for="checkin-date">Check-in Date</label>
-                    <input type="date" id="checkin-date" name="checkin" required>
+                    <input type="date" id="checkin-date" name="checkin">
                 </div>
                 <div class="form-group inline">
                     <label for="checkout-date">Check-out Date</label>
-                    <input type="date" id="checkout-date" name="checkout" required>
+                    <input type="date" id="checkout-date" name="checkout">
                 </div>
                 <div class="form-group">
-                    <label for="message">Anything Else?</label>
                     <textarea id="message" name="visitor_message"
-                        placeholder="Tell us anything else that might be important." required></textarea>
+                        placeholder="Tell us anything else that might be important."></textarea>
                 </div>
-                <button type="submit">Book The Rooms</button>
+                <div id="responseMessage" class="response-message"></div>
+                <button type="submit" class="cta-button" id="book-btn">BOOK NOW</button>
             </form>
         </div>
 
@@ -292,14 +293,14 @@
             <div class="footer-col">
                 <img src="./assets/img/Gochuka logo 2.png" alt="">
                 <h4>Contact</h4>
-                <h3>Gochukha Resturant and Café
-                    Bapi Lam 13, Babesa
-                    Thimphu
+                <h3>Gochukha Resturant and Café <br>
+                    Bapi Lam 13, Babesa <br>
+                    Thimphu <br>
                     Bhutan</h3>
 
-                <h2>Phone +975 - 17123456 </h2>
-                <h2>Phone +975 - 77123456 </h2>
-                <h2>Whatsapp Reservation 17123456 </h2>
+                <h2 style="font-family: 'raleway' !important;">Phone +975 - 17123456 </h2>
+                <h2 style="font-family: 'raleway' !important;">Phone +975 - 77123456 </h2>
+                <h2 style="font-family: 'raleway' !important;">Whatsapp Reservation 17123456 </h2>
                 <div class="footer-socials">
                     <a href="https://www.instagram.com" target="_blank" class="social-link"><i
                             class="fab fa-instagram"></i></a>
@@ -324,16 +325,25 @@
             <div class="footer-col">
                 <h4>Pages</h4>
                 <ul class="links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#"> ABOUT US</a></li>
-                    <li><a href="#">ROOMS</a></li>
-                    <li><a href="#">EATERY</a></li>
-                    <li><a href="#">CONFERENCE</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">BOOKING</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html"> ABOUT US</a></li>
+                    <li><a href="rooms.html">ROOMS</a></li>
+                    <li><a href="restaurant.html">EATERY</a></li>
+                    <li><a href="conference.html">CONFERENCE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
+            </div>
+        </div>
+        <div class="last">
+            <div class="last-col f">
+                <p>2024.GOCHUKHA.ALL RIGHT RESERVED</p>
+            </div>
+            <div class="last-col s">
+                <p><a href="#">TERMS AND CONDITIONS. PRIVACY POLICY</a></p>
+            </div>
+            <div class="last-col t">
+                <p>WEBSITE BY ULTRA</p>
             </div>
         </div>
     </section>

@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sender Data
     $name = str_replace(array("\r","\n"),array(" "," "), strip_tags(trim($_POST["name"])));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $phone = trim($_POST["visitor_name"]);
+    $phone = trim($_POST["pnumber"]);
     $room_preference = trim($_POST["room_preference"]);
     $guest_number = trim($_POST["guest-number"]);
     $checkin = trim($_POST["checkin"]);

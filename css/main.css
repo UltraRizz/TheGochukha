@@ -30,24 +30,22 @@ body {
   gap: 1rem;
 }
 
-.content-section h4 {
-  font-size: 1.2rem;
+.content-section h5 {
   color: #f1ebdf;
   margin: 0;
 }
 .content-section h2 {
-  font-size: 4rem;
   color: #f1ebdf;
   margin: 0;
   font-weight: 300;
 }
 
 .content-section p {
-  font-size: 1.1rem;
   color: #f1ebdf;
   line-height: 1.6;
+  letter-spacing: 0.4rem;
   margin: 0;
-  width: 40%;
+  width: 70%;
 }
 
 .divider1 {
@@ -67,7 +65,7 @@ body {
 }
 
 .dining h1 {
-  font-size: 128px; /* Adjust size as needed */
+  font-size: 6vw; /* Adjust size as needed */
   margin: 10px 0;
   color: #ffff;
   font-weight: 300;
@@ -85,16 +83,6 @@ body {
   color: #fff; /* Optional color */
   max-width: 600px; /* Optional: to restrict paragraph width */
 }
-.cta-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #363636; /* Primary button color */
-  border: 1px solid white;
-  border-radius: 50px;
-  cursor: pointer;
-}
 .rooms {
   width: 100%;
   height: 100vh;
@@ -109,6 +97,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .room {
@@ -131,16 +120,27 @@ body {
 }
 
 .room-text {
-  font-family: "Times New Roman", Times, serif;
   position: absolute;
-  bottom: 170px; /* Distance from the bottom */
-  left: 60%;
-  transform: translateX(-70%);
+  bottom: 45%; /* Distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
   color: #fff;
-  padding: 10px 20px;
-  font-size: 2.2rem;
+  padding: 10px 10px;
+  font-size: 3rem;
   text-align: center;
   pointer-events: none; /* Ensures text doesn't interfere with clicks */
+  width: 65%;
+}
+.room-text h1 {
+  font-weight: 200;
+  letter-spacing: 0.4rem;
+}
+
+#room-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15%;
 }
 
 .slider-container {
@@ -165,6 +165,7 @@ body {
 .slider img {
   max-width: 100%;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 .slider-nav {
@@ -224,7 +225,7 @@ body {
   margin-top: 7rem;
 }
 
-.text-content h4 {
+.text-content h5 {
   font-size: 1.2rem;
   color: black;
   margin: 0;
@@ -269,14 +270,14 @@ body {
 }
 
 .cus-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: black;
-  width: 207px;
-  background-color: #d8d8d8;
-  border: 1px solid black;
+  margin-block: 20px;
+  padding: 1vw 2vw;
+  color: #000000;
+  background: none; /* Primary button color */
+  border: 1px solid #000000;
   border-radius: 50px;
   cursor: pointer;
+  width: 40%;
 }
 .cafe-btn {
   padding: 0.75rem 1.5rem;
@@ -295,11 +296,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5rem;
 }
 
 .gallery img {
-  width: 1066px;
-  height: 633px;
+  width: 60%;
   margin-bottom: 2rem;
   margin-right: -6rem;
 }
@@ -336,75 +337,11 @@ body {
 }
 
 .gal-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: black;
-  width: 207px;
-  background-color: #d8d8d8;
-  border: 1px solid black;
+  margin-top: 20px;
+  padding: 1vw 2vw;
+  color: #000000;
+  background: none; /* Primary button color */
+  border: 1px solid #000000;
   border-radius: 50px;
   cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-logo {
-    max-width: 200px;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .name h1 {
-    font-size: 2rem;
-  }
-
-  .content-section {
-    flex-direction: column;
-  }
-
-  .dining h1 {
-    font-size: 1.5rem;
-  }
-
-  .dining h5,
-  .dining p {
-    font-size: 0.9rem;
-  }
-
-  .room-text {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 60vh;
-  }
-
-  .hero p {
-    font-size: 0.8rem;
-  }
-
-  .name h1 {
-    font-size: 1.5rem;
-  }
-
-  .content-section p {
-    font-size: 0.8rem;
-  }
-
-  .dining h1 {
-    font-size: 1.2rem;
-  }
-
-  .cta-button {
-    font-size: 0.8rem;
-    padding: 5px 15px;
-  }
 }

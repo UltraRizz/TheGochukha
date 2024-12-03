@@ -30,12 +30,10 @@
     <section class="sticky-nav hidden">
         <hr>
         <ul>
-            <li><a href="#home">ACCOMMODATION</a></li>
-            <li><a href="#about">RESTAURANT</a></li>
-            <li><a href="#services">BAR</a></li>
-            <li><a href="#rooms">CAFE</a></li>
-            <li><a href="#contact">EVENTS</a></li>
-            <li><a href="#contact">BOOKING</a></li>
+            <li><a href="#philosophy">PHILOSOPHY</a></li>
+            <li><a href="#experience">OVERVIEW</a></li>
+            <li><a href="#symbol">SYMBOL</a></li>
+            <li><a href="#booking">BOOKING</a></li>
         </ul>
     </section>
 
@@ -101,7 +99,7 @@
     </div>
 
     <section class="content-section">
-        <div class="first">
+        <div class="first" id="philosophy">
             <p>Our Philosophy: Uniquely The Gochukha, Tailored Just for You</p>
         </div>
         <div class="second">
@@ -113,9 +111,9 @@
         <img src="./assets/img/aboutTeam.png" alt="">
     </section>
 
-    <section class="experience-section">
+    <section class="experience-section" id="experience">
         <h5>YOUR EXPERIENCE</h5>
-        <h1>The Gochukha: Where Culture and Comfort Converge</h1>
+        <h1>The Gochukha <br> Where Culture and Comfort Converge</h1>
         <div class="descriptions">
             <div class="key">MEANINGFUL</div>
             <div class="value">The name Gochukha reflects the serene beauty and rich culture of Bhutan, encapsulating a
@@ -152,16 +150,18 @@
                 our operations.</div>
         </div>
     </section>
-    <section class="hotel-section">
+    <section class="hotel-section" id="symbol">
         <img src="./assets/img/about.png" alt="Gochukha Hotel" />
         <div class="text-content">
-            <h4>symbol</h4>
+            <h5>OUR SYMBOL</h5>
             <p>
                 The customised ‘A’ in the GOCHUKHA gives each customer personalised &
                 heavenly luxury, making it stand out.
                 The handwritten ‘A’ adds a personal
                 touch to the logotype & a touch of
                 heavenly luxury.
+                <br>
+                <br>
                 The waves on ‘A’ denotes river; the
                 ‘Thim-chhu, Orong-chhu and the
                 Wang-chhu
@@ -170,17 +170,61 @@
                 the GOCHUKHA creates a sense
                 that that it is a luxury brand with,
                 making it stand out.
+                <br>
+                <br>
                 The diamond inside is where the
                 THE GOCHUKHA is situated; in
                 middle of the three valleys
                 (Lungtenphu, Simtokha and the
-                Brap valleys)</p>
+                Brap valleys)
+            </p>
         </div>
     </section>
+    <section class="booking-section" id="booking">
+        <div class="header">
+            <h2>
+                EXPERIENCE GOCHUKHA
+            </h2>
+        </div>
+        <div class="form">
+            <form method="post" class="booking-form" action="mail.php" id="bookingForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="pnumber" name="pnumber" placeholder="Phone Number">
+                </div>
+                <div class=" form-group inline">
+                    <select id="room-selection" name="room_preference">
+                        <option value="">Choose a Room</option>
+                        <option value="Premium">Premium Deluxe Room</option>
+                        <option value="TwinBed">Deluxe room with Twin Bed</option>
+                        <option value="Conference">Conference Hall</option>
+                    </select>
+                </div>
+                <div class="form-group inline">
+                    <input type="number" id="guest-number" name="guest-number" placeholder="Number of Guest" min="1">
+                </div>
+                <div class="form-group inline">
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checkin">
+                </div>
+                <div class="form-group inline">
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="visitor_message"
+                        placeholder="Tell us anything else that might be important."></textarea>
+                </div>
+                <div id="responseMessage" class="response-message"></div>
+                <button type="submit" class="cta-button">BOOK NOW</button>
+            </form>
+        </div>
 
-    <section class="detail">
-        <h1>OUR HOTEL</h1>
-        <img src="./assets/img/hotl.png" alt="">
     </section>
 
     <!-- Scroll Progress Indicator -->
@@ -198,6 +242,67 @@
             <path class="arrow" d="M5 20 L15 10 L25 20" fill="none" stroke="#ff5733" stroke-width="4" />
         </svg>
     </div>
+
+    <section class="footer">
+        <h3>Are you ready to stay at GOCHUKHA?</h3>
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="./assets/img/Gochuka logo 2.png" alt="">
+                <h4>Contact</h4>
+                <h3>Gochukha Resturant and Café
+                    Bapi Lam 13, Babesa
+                    Thimphu
+                    Bhutan</h3>
+
+                <h2 style="font-family: 'raleway' !important;">Phone +975 - 17123456 </h2>
+                <h2 style="font-family: 'raleway' !important;">Phone +975 - 77123456 </h2>
+                <h2 style="font-family: 'raleway' !important;">Whatsapp Reservation 17123456 </h2>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-link"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="links">
+                    <li><a href="#">ACCOMODATION</a></li>
+                    <li><a href="#">RESTAURANT</a></li>
+                    <li><a href="#">BAR</a></li>
+                    <li><a href="#">CAFÉ</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">BOOKING</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul class="links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html"> ABOUT US</a></li>
+                    <li><a href="rooms.html">ROOMS</a></li>
+                    <li><a href="restaurant.html">EATERY</a></li>
+                    <li><a href="conference.html">CONFERENCE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="last">
+            <div class="last-col f">
+                <p>2024.GOCHUKHA.ALL RIGHT RESERVED</p>
+            </div>
+            <div class="last-col s">
+                <p><a href="#">TERMS AND CONDITIONS. PRIVACY POLICY</a></p>
+            </div>
+            <div class="last-col t">
+                <p>WEBSITE BY ULTRA</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 <script src="./scripts/nav.js"></script>

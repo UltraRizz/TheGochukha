@@ -11,14 +11,12 @@ body {
   gap: 1rem;
 }
 .hero-content h5 {
-  font-size: 1.2rem;
   color: #fff;
   margin: 0;
 }
 
 .hero-content h1 {
-  width: 50%;
-  font-size: 5rem;
+  width: 70%;
   color: #fff;
   margin: 0;
   font-weight: 300;
@@ -37,20 +35,22 @@ body {
 .content-section .first {
   align-self: start;
   width: 40%;
+  padding-left: 3vw;
 }
 .content-section .first p {
-  font-size: 3rem;
+  font-size: 2vw;
   text-align: start;
   letter-spacing: 3px;
   transform: scaleX(1.2);
 }
 .content-section .second {
   align-self: end;
+  padding-right: 3vw;
   width: 40%;
 }
 .content-section .second p {
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: 1.4vw;
   text-align: start;
 }
 
@@ -69,13 +69,11 @@ body {
   margin-bottom: 7rem;
 }
 .experience-section h5 {
-  font-size: 1.2rem;
   margin: 0;
 }
 .experience-section h1 {
   text-align: center;
-  width: 35%;
-  font-size: 3rem;
+  width: 70%;
   margin-top: 2%;
   font-weight: 300;
 }
@@ -83,27 +81,27 @@ body {
   margin-top: 3%;
   width: 60%;
   border-top: 1px solid #000;
-  height: 15vh;
+  height: 10vh;
   display: flex;
-  gap: 2rem;
+  gap: 1.1vh;
   align-items: center;
 }
 
 .descriptions .key {
   width: 40%;
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   font-weight: 700;
 }
 .descriptions .value {
   width: 100%;
   justify-self: end;
-  font-size: 1.5rem;
+  font-size: 1.1vw;
   font-weight: 300;
 }
 
 .hotel-section {
   width: 100%;
-  background-color: #3C3C3C;
+  background-color: #3c3c3c;
   padding-left: 110px;
   display: flex;
   align-items: center;
@@ -125,43 +123,13 @@ body {
   margin-top: 1rem;
 }
 .text-content p {
-  font-size: 1rem;
   color: white;
   line-height: 1.6;
   margin: 0;
   width: 55%;
 }
 
-.text-content h4 {
-  font-size: 1.2rem;
+.text-content h5 {
   color: white;
   margin: 0;
-}
-.detail {
-  background-image: url(../assets/img/abt.png);
-  height: 130vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.detail h1 {
-  color: white;
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  margin-top: -10rem;
-  width: 30%;
-  font-weight: 300;
-  align-items: center;
-}
-.detail img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 3rem;
 }
