@@ -924,17 +924,22 @@ input[type="number"] {
   }
 
   #book-btn {
-    width: 40%;
-    height: 5vh;
-    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-size: 3.5vw;
+    padding: 2vh 3vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
 
+  .footer {
+    padding: 2vh 0;
+  }
   .footer > h3 {
-    font-size: 3vw;
-    padding: 0;
+    display: none;
   }
   .footer .footer-row {
     flex-wrap: wrap;
@@ -948,6 +953,24 @@ input[type="number"] {
   .footer-col:first-child h4 {
     display: none;
   }
+
+  .footer-row .footer-col h3 {
+    font-size: 4vw;
+    margin-bottom: 1rem;
+  }
+
+  .footer-row .footer-col h2 {
+    font-size: 2vw;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+
+  .footer-socials .social-link {
+    font-size: 4vw;
+  }
+
   .footer-col:first-child {
     width: 50%;
     border-right: none;
