@@ -325,7 +325,6 @@ button {
 .booking-section .header h2 {
   width: 100%;
   text-align: center;
-  font-size: 5rem;
   margin-bottom: 1rem;
   font-weight: 400;
 }
@@ -342,7 +341,7 @@ button {
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1vw;
   color: #fff;
 }
 
@@ -363,7 +362,7 @@ button {
   color: #fff;
   background: none;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1vw;
   box-sizing: border-box;
   outline: none;
   transition: border-color 0.3s;
@@ -434,7 +433,7 @@ input[type="number"] {
   border: 2px solid #949494;
   color: #fff;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1vw;
   background: none;
   border-radius: 5px;
   box-sizing: border-box;
@@ -468,7 +467,7 @@ input[type="number"] {
 }
 .footer > h3 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6vw;
   font-weight: 600;
   padding-block: 0.5rem;
   width: 100%;
@@ -496,7 +495,7 @@ input[type="number"] {
 }
 .footer-col:nth-child(2),
 .footer-col:last-child {
-  padding-top: 8rem;
+  padding-top: 6rem;
   text-align: center;
 }
 .footer-col:last-child {
@@ -505,22 +504,22 @@ input[type="number"] {
 
 .footer-col h4 {
   color: #dab44d;
-  font-size: 1.2rem;
+  font-size: 1.1vw;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
 .footer-row .footer-col h3 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 400;
   margin-bottom: 2rem;
-  width: 30%;
+  width: 100%;
 }
 .footer-row .footer-col h2 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 400;
-  width: 40%;
+  width: 100%;
 }
 
 .footer-col img {
@@ -538,6 +537,7 @@ input[type="number"] {
 }
 
 .footer-col .links li a {
+  font-size: 1vw;
   text-decoration: none;
   color: #bfbfbf;
 }
@@ -559,7 +559,7 @@ input[type="number"] {
 
 .footer-socials .social-link {
   text-decoration: none; /* Remove underline */
-  font-size: 2rem; /* Adjust icon size */
+  font-size: 1.6vw; /* Adjust icon size */
   color: #fff; /* Icon color */
   transition: color 0.3s; /* Smooth hover effect */
 }
@@ -583,13 +583,13 @@ input[type="number"] {
 
 .last .last-col p {
   color: #6c6c6c;
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 500;
 }
 
 .last .last-col p a {
   color: #6c6c6c;
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 500;
   text-decoration: none;
 }
