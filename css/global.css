@@ -41,20 +41,37 @@ body {
 
 p {
   font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
 }
 h1,
 h2 {
   font-family: "Fragile", sans-serif;
 }
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h5 {
+  font-size: 1.5vw;
+}
+
 .cta-button {
   margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 1vw 2vw;
+  font-size: 1vw;
   color: #fff;
   background: none; /* Primary button color */
   border: 1px solid white;
   border-radius: 50px;
   cursor: pointer;
+}
+button {
+  font-size: 1vw;
 }
 /* Hero Section */
 .hero {
@@ -79,38 +96,42 @@ h2 {
 .hero-content {
   z-index: 2; /* Ensures content is above the overlay */
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   bottom: 15%;
   margin: 0 auto;
 }
 
 .hero-logo {
-  width: 781px;
-  max-width: 100%;
+  width: 70vw;
   margin-bottom: 1rem;
-  margin: 0 auto;
 }
 
 .hero p {
-  font-size: var(--p-font);
   color: var(--text-color);
   margin-top: -1rem;
 }
 
 .title {
-  max-width: 73%;
-  font-size: 13rem; /* Combine scale and translate */
-  text-align: center; /* Center the text */
-  letter-spacing: 4rem;
-  font-weight: bold; /* Optional, adds emphasis to the text */
-  z-index: 100;
-  color: rgba(255, 255, 255, 0.1);
+  width: 100%;
   position: absolute;
-  bottom: 2rem;
+  bottom: -15%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
   opacity: 0.5;
 }
 
 .title h1 {
-  transform: scale(1.3, 1.15);
+  font-size: 30vw; /* Makes the font size responsive to the viewport width */
+  text-transform: uppercase; /* Optional, if you want uppercase letters */
+  margin: 0; /* Removes default margins */
+  color: rgba(255, 255, 255, 0.1);
+  white-space: nowrap; /* Prevents the word from breaking into multiple lines */
+  transform: scaleY(0.9); /* Stretches vertically if needed */
 }
 
 .name {
@@ -151,15 +172,6 @@ h2 {
   color: #969696;
 }
 
-.primary-nav .Text a {
-  font-size: 1rem;
-  color: #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 3;
-  text-transform: capitalize;
-}
-
 /* Divider */
 .divider {
   width: 4%;
@@ -184,6 +196,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+}
+
+.primary-nav .Text a {
+  color: #fff;
 }
 
 /* Sticky Navigation */
@@ -213,7 +229,7 @@ h2 {
 }
 
 .sticky-nav ul li a {
-  font-size: 1.1rem;
+  font-size: 1vw;
   color: #9c9c9c;
   text-transform: uppercase;
   margin: 0 30px;
@@ -696,7 +712,7 @@ input[type="number"] {
 /* Close Button */
 .close {
   position: relative;
-  font-size: 16px; /* Adjust size as needed */
+  font-size: 1.2vw; /* Adjust size as needed */
   color: #ffffff; /* Text color */
   cursor: pointer; /* Indicate it's clickable */
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
@@ -753,14 +769,14 @@ input[type="number"] {
 }
 
 .content-section-nav .left h5 {
-  font-size: 1.2rem;
+  font-size: 1vw;
   color: #ffffff;
   margin: 0;
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 
 .content-section-nav .left .menu-content .first a h2 {
-  font-size: 2.5rem;
+  font-size: 2vw;
   color: #ffffff;
   text-decoration: none;
   font-weight: 400;
@@ -777,7 +793,6 @@ input[type="number"] {
 }
 
 .socials {
-  margin-top: 5%;
   display: flex;
   gap: 2rem; /* Spacing between icons */
 }
@@ -785,7 +800,7 @@ input[type="number"] {
 .social-link {
   animation: menuItemSlide 3s ease forwards;
   text-decoration: none; /* Remove underline */
-  font-size: 2.5rem; /* Adjust icon size */
+  font-size: 2vw; /* Adjust icon size */
   color: #fff; /* Icon color */
   transition: color 0.3s; /* Smooth hover effect */
 }
@@ -804,7 +819,7 @@ input[type="number"] {
 .more-links a {
   margin-top: 5%;
   text-decoration: none; /* Remove underline */
-  font-size: 1.2rem; /* Adjust icon size */
+  font-size: 1.1vw; /* Adjust icon size */
   color: #fff; /* Icon color */
   transition: color 0.3s; /* Smooth hover effect */
   animation: menuItemSlide 3s ease forwards;
@@ -812,4 +827,3 @@ input[type="number"] {
 .more-links a:hover {
   color: #000000; /* Change color on hover */
 }
-
