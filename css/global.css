@@ -943,12 +943,19 @@ input[type="number"] {
   }
   .footer .footer-row {
     flex-wrap: wrap;
-    height: fit-content;
+    height: max-content;
     padding: 2vh 6vh;
   }
   .footer-col {
     width: 100%;
     padding: 0;
+  }
+
+  .footer-col .links {
+    margin-top: 5%;
+  }
+  .footer-col .links li {
+    margin-bottom: 3%;
   }
   .footer-col:first-child h4 {
     display: none;
@@ -1015,8 +1022,12 @@ input[type="number"] {
     transform: none;
   }
   .last .last-col.t {
-    margin-top: 5%;
+    margin-top: 2%;
     right: 50%;
     transform: translate(50%, 100%);
+  }
+  .footer .last .last-col.t p {
+    color: #1e1e1e;
+    margin-bottom: 5%;
   }
 }
