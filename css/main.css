@@ -43,7 +43,7 @@ body {
 .content-section p {
   color: #f1ebdf;
   line-height: 1.6;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
   margin: 0;
   width: 70%;
 }
@@ -226,13 +226,11 @@ body {
 }
 
 .text-content h5 {
-  font-size: 1.2rem;
   color: black;
   margin: 0;
 }
 
 .text-content h2 {
-  font-size: 36px;
   color: black;
   width: 80%;
   margin: 0;
@@ -240,14 +238,13 @@ body {
 }
 
 .text-content p {
-  font-size: 1rem;
   color: black;
   line-height: 1.6;
   margin: 0;
   width: 80%;
 }
 
-.cafe-section .text-content h4 {
+.cafe-section .text-content h5 {
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   margin: 0;
@@ -315,7 +312,7 @@ body {
   gap: 1rem;
 }
 
-.gallery .content h4 {
+.gallery .content h5 {
   font-size: 1.2rem;
   color: black;
   margin: 0;
@@ -344,4 +341,146 @@ body {
   border: 1px solid #000000;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .content-section {
+    padding: 0 0 7% 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .content-section .right {
+    padding: 0 2rem;
+  }
+  .content-section h5 {
+    font-size: 3vw;
+  }
+  .content-section h2 {
+    font-size: 6vw;
+  }
+  .content-section p {
+    font-size: 3vw;
+    width: 100%;
+  }
+  .cta-button {
+    font-size: 2.5vw !important;
+    padding: 2.5vw 5vw !important;
+  }
+
+  .room-types {
+    flex-direction: column;
+  }
+  #room-btn {
+    display: none;
+  }
+
+  .dining {
+    height: max-content;
+    padding: 4vh 2vh;
+  }
+  .dining h5 {
+    font-size: 3vw;
+  }
+  .dining p {
+    font-size: 3vw;
+  }
+
+  .slider-container {
+    margin: 10% 0;
+    width: 100%;
+    padding: 0;
+  }
+  .slider-nav {
+    bottom: 1rem;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .cusin-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cusin-section img {
+    max-width: 100%;
+  }
+  .text-content {
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: 3vh;
+  }
+  .text-content h5 {
+    font-size: 3vw;
+  }
+  .text-content h2 {
+    width: 100%;
+    font-size: 6vw;
+  }
+  .text-content p {
+    width: 100%;
+    font-size: 3vw;
+  }
+  .cus-btn {
+    width: 50%;
+    font-size: 2.5vw !important;
+    padding: 2.5vw 5vw !important;
+  }
+
+  .gallery {
+    gap: 2rem;
+  }
+  .gallery img {
+    width: 100%;
+    margin-right: 0;
+  }
+  .gallery .content {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .gallery .content h5 {
+    font-size: 3vw;
+  }
+  .gallery .content h1 {
+    font-size: 6vw;
+    width: 100%;
+  }
+  .gallery .content p {
+    font-size: 3vw;
+    width: 100%;
+  }
+  .gal-btn {
+    width: 50%;
+    font-size: 2.5vw !important;
+    padding: 2.5vw 5vw !important;
+  }
+
+  .cafe-section {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .cafe-section img {
+    max-width: 100%;
+  }
+  .cafe-section .text-content {
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: 3vh;
+  }
+  .cafe-section .text-content h5 {
+    font-size: 3vw;
+  }
+  .cafe-section .text-content h2 {
+    width: 100%;
+    font-size: 6vw;
+  }
+  .cafe-section .text-content p {
+    width: 100%;
+    font-size: 3vw;
+  }
+  .cafe-btn {
+    width: 50%;
+    font-size: 2.5vw !important;
+    padding: 2.5vw 5vw !important;
+  }
 }
