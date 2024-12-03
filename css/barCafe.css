@@ -278,3 +278,83 @@ body {
     font-size: 3vw !important;
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .hero-content h1 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .hero-content h5 {
+    font-size: 3vw !important;
+  }
+  .content-section .text-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .content-section .text-content h5 {
+    text-align: center;
+    font-size: 3vw !important;
+  }
+  .content-section .text-content p {
+    text-align: center;
+    font-size: 2.5vw !important;
+  }
+  .content-section .img {
+    width: 100%;
+  }
+  .culinary {
+    margin: 2rem 2rem;
+  }
+  .culinary h5 {
+    font-size: 2vw !important;
+  }
+  .culinary h2 {
+    width: 100%;
+    font-size: 4vw !important;
+  }
+  .culinary p {
+    width: 100%;
+    font-size: 2.5vw !important;
+  }
+
+  .menu-section {
+    gap: 3rem;
+  }
+  .menu_card {
+    flex-direction: column;
+  }
+  .menu_card .menu_card_img {
+    width: 100%;
+  }
+  .menu_card_img:last-child {
+    display: none;
+  }
+  .menu_card .menu_card_content {
+    width: 80%;
+  }
+  .menu_card_content img {
+    display: none;
+  }
+  .menu_card_content .content {
+    gap: 1rem;
+    width: 100%;
+  }
+  .menu_card_content .content h5 {
+    font-size: 2vw !important;
+  }
+  .menu_card_content .content a {
+    font-size: 3vw !important;
+  }
+  .menu_card_content .content .items {
+    width: 100%;
+  }
+  .item-name {
+    font-size: 2vw !important;
+  }
+  .item-price {
+    font-size: 2vw !important;
+  }
+  .content .items .second p {
+    font-size: 2vw !important;
+  }
+}
