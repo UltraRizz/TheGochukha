@@ -1012,6 +1012,16 @@ input[type="number"] {
     color: #1e1e1e;
     margin-bottom: 5%;
   }
+  .booking-form .cta-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cta-button {
+    font-size: 2.5vw !important;
+    padding: 2.5vw 8vw !important;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero p {
