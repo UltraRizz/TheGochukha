@@ -686,7 +686,6 @@ input[type="number"] {
 .footer .footer-row {
   height: 60vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 5rem 5rem;
 }
@@ -715,6 +714,7 @@ input[type="number"] {
   font-size: 1.1vw;
   font-weight: 400;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 .footer-row .footer-col h3 {
   color: #fff;
@@ -819,10 +819,10 @@ input[type="number"] {
     margin-bottom: 1vh;
     padding-bottom: 1vh;
   }
-  .title{
+  .title {
     display: none;
   }
-  .name h1{
+  .name h1 {
     font-size: 4vw;
     letter-spacing: 1rem;
   }
@@ -922,7 +922,6 @@ input[type="number"] {
   }
   .footer > h3 {
     font-size: 2vw;
-   
   }
   .footer .footer-row {
     flex-wrap: wrap;
@@ -1121,16 +1120,15 @@ input[type="number"] {
     font-size: 2.5vw;
   }
 
-  #book-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;
-    font-size: 3.5vw;
-    padding: 2vh 3vw;
+  .booking-form .cta-button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .cta-button {
+    font-size: 2.5vw !important;
+    padding: 2.5vw 5vw !important;
   }
 
   .footer {
@@ -1140,7 +1138,8 @@ input[type="number"] {
     display: none;
   }
   .footer .footer-row {
-    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
     height: max-content;
     padding: 2vh 6vh;
   }
@@ -1160,12 +1159,13 @@ input[type="number"] {
   }
 
   .footer-row .footer-col h3 {
-    font-size: 4vw;
+    width: 100%;
+    font-size: 3vw !important;
     margin-bottom: 1rem;
   }
 
   .footer-row .footer-col h2 {
-    font-size: 2vw;
+    font-size: 3vw !important;
   }
 
   .footer-socials {
@@ -1177,15 +1177,15 @@ input[type="number"] {
   }
 
   .footer-col:first-child {
-    width: 50%;
+    width: 60%;
     border-right: none;
   }
   .footer-col:nth-child(2) {
     display: none;
   }
   .footer-col:last-child {
-    text-align: end;
-    padding: 0;
+    text-align: start;
+    padding: 4vh 0;
     width: 50%;
   }
   .footer-col:last-child {
@@ -1194,11 +1194,8 @@ input[type="number"] {
   .footer-col h4 {
     font-size: 2vw;
   }
-  .footer-row .footer-col h3 {
-    font-size: 2.5vw;
-  }
   .footer-col .links li a {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   .footer .last {

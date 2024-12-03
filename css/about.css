@@ -49,7 +49,7 @@ body {
   width: 40%;
 }
 .content-section .second p {
-  letter-spacing: 3px;
+  letter-spacing: 0.1rem;
   font-size: 1.4vw;
   text-align: start;
 }
@@ -132,4 +132,83 @@ body {
 .text-content h5 {
   color: white;
   margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h5 {
+    font-size: 3vw;
+  }
+  .hero-content h1 {
+    font-size: 6vw;
+    width: 100%;
+  }
+  .content-section {
+    padding: 0;
+  }
+  .content-section .first {
+    width: 50%;
+    margin-left: 3vw;
+  }
+  .content-section .first p {
+    font-size: 3vw;
+  }
+  .content-section .second {
+    width: 60%;
+  }
+  .content-section .second p {
+    font-size: 2.5vw;
+  }
+  .content-section img {
+    width: 100%;
+  }
+  .experience-section {
+    margin-bottom: 5rem;
+  }
+  .experience-section h1 {
+    font-size: 6vw;
+    width: 100%;
+  }
+  .experience-section h5 {
+    font-size: 3vw;
+  }
+  .descriptions {
+    width: 90%;
+    height: 5vh;
+    gap: 1rem;
+  }
+  .descriptions .key {
+    font-size: 3vw;
+  }
+  .descriptions .value {
+    font-size: 2.5vw;
+  }
+  .hotel-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+  }
+  .hotel-section img {
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+  .text-content {
+    max-width: 80%;
+    margin: 0;
+    padding: 5vw 5vw;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-content p {
+    width: 100%;
+    font-size: 3vw;
+  }
+  .text-content h5 {
+    font-size: 3vw;
+  }
+  .text-content h1 {
+    font-size: 6vw;
+  }
 }
