@@ -343,6 +343,156 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .content-section{
+    gap: 3rem;
+  }
+  .content-section p {
+    font-size: 1.5vw;
+    width: 80%;
+  }
+  
+  .room-types {
+    flex-direction: column;
+  }
+  #room-btn {
+    display: none;
+  }
+
+  .dining {
+    height: max-content;
+    padding: 4vh 2vh;
+  }
+  .dining h5 {
+    font-size: 2vw;
+  }
+  .dining p {
+    font-size: 2vw;
+  }
+
+  .slider-container {
+    margin: 5% 0;
+    width: 100%;
+    padding: 0;
+  }
+  .slider-nav {
+    bottom: 1rem;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  .cusin-section {
+    gap: 2rem;
+  }
+  .cusin-section img {
+    max-width: 40%;
+  }
+  .text-content {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .text-content h5 {
+    font-size: 1vw;
+  }
+  .text-content h2 {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  .text-content p {
+    width: 100%;
+    font-size: 1.6vw;
+  }
+  .cus-btn {
+    width: 50%;
+    font-size: 1.5vw !important;
+    padding: 2vw 5vw !important;
+  }
+  .gallery {
+    gap: 2rem;
+  }
+  .gallery img {
+    width: 80%;
+    margin-right: 0;
+  }
+  .gallery .content {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .gallery .content h5 {
+    font-size: 3vw;
+  }
+  .gallery .content h1 {
+    font-size: 5vw;
+    width: 100%;
+  }
+  .gallery .content p {
+    font-size: 2vw;
+    width: 100%;
+  }
+  .gal-btn {
+    width: 40%;
+    font-size: 2vw !important;
+    padding: 2vw 4vw !important;
+  }
+  .gallery {
+    gap: 2rem;
+  }
+  .gallery img {
+    width: 100%;
+    margin-right: 0;
+  }
+  .gallery .content {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .gallery .content h5 {
+    font-size: 3vw;
+  }
+  .gallery .content h1 {
+    font-size: 6vw;
+    width: 100%;
+  }
+  .gallery .content p {
+    font-size: 3vw;
+    width: 100%;
+  }
+  .gal-btn {
+    width: 50%;
+    font-size: 2.5vw !important;
+    padding: 2.5vw 5vw !important;
+  }
+
+  .cafe-section {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .cafe-section img {
+    max-width: 100%;
+  }
+  .cafe-section .text-content {
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: 3vh;
+  }
+  .cafe-section .text-content h5 {
+    font-size: 3vw;
+  }
+  .cafe-section .text-content h2 {
+    width: 100%;
+    font-size: 5vw;
+  }
+  .cafe-section .text-content p {
+    width: 100%;
+    font-size: 2vw;
+  }
+  .cafe-btn {
+    width: 40%;
+    font-size: 2vw !important;
+    padding: 2.5vw 5vw !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .content-section {
     padding: 0 0 7% 0;
