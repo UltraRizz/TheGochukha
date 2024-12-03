@@ -815,6 +815,204 @@ input[type="number"] {
 }
 
 @media screen and (max-width: 1024px) {
+  .primary-nav {
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+  }
+  .title{
+    display: none;
+  }
+  .name h1{
+    font-size: 4vw;
+    letter-spacing: 1rem;
+  }
+
+  .hidden-nav {
+    background-color: #aaaaaaf7;
+    width: 100%;
+    height: fit-content;
+    padding-inline: 2%;
+  }
+  .close {
+    font-size: 2.5vw;
+  }
+
+  .hidden-nav .menu-content {
+    gap: 0;
+  }
+
+  .content-section-nav .left h5 {
+    font-size: 2vw;
+    margin: 3rem 0 10% 0;
+  }
+
+  .content-section-nav .left .menu-content .first a h2 {
+    font-size: 4vw;
+  }
+
+  .hidden-nav .menu-content .second {
+    margin: 2% 0 5% 0;
+    width: 100%;
+  }
+  .socials {
+    margin-top: 5%;
+    gap: 1.5rem;
+  }
+
+  .social-link {
+    font-size: 5vw;
+  }
+  .more-links {
+    margin-top: 10%;
+  }
+  .more-links a {
+    font-size: 3vw;
+  }
+
+  .booking-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .booking-section .header {
+    width: 100%;
+  }
+  .booking-section .header h2 {
+    font-size: 4vw;
+  }
+
+  .form {
+    width: 80%;
+    position: relative;
+  }
+  .booking-form {
+    max-width: 80%;
+  }
+
+  .form-group label {
+    font-size: 1vw;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group select {
+    font-size: 2vw;
+  }
+
+  #message {
+    font-size: 2vw;
+  }
+
+  #book-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-size: 2vw;
+    padding: 2vh 3vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer {
+    padding: 3vh 0;
+  }
+  .footer > h3 {
+    font-size: 2vw;
+   
+  }
+  .footer .footer-row {
+    flex-wrap: wrap;
+    height: max-content;
+    padding: 2vh 6vh;
+  }
+  .footer-col {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-col .links {
+    margin-top: 5%;
+  }
+  .footer-col .links li {
+    margin-bottom: 3%;
+  }
+  .footer-col:first-child h4 {
+    display: none;
+  }
+
+  .footer-row .footer-col h3 {
+    font-size: 1.7vw !important;
+    margin-bottom: 1rem;
+  }
+
+  .footer-row .footer-col h2 {
+    font-size: 1.5vw !important;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+
+  .footer-socials .social-link {
+    font-size: 3vw;
+  }
+
+  .footer-col:first-child {
+    width: 50%;
+    border-right: 1px solid white;
+  }
+  .footer-col:nth-child(2) {
+    display: none;
+  }
+  .footer-col:last-child {
+    text-align: end;
+    padding: 0;
+    width: 50%;
+  }
+  .footer-col:last-child {
+    border-left: none;
+  }
+  .footer-col h4 {
+    font-size: 2vw;
+  }
+  .footer-row .footer-col h3 {
+    font-size: 1vw;
+  }
+  .footer-col .links li a {
+    font-size: 2vw;
+  }
+
+  .footer .last {
+    display: block;
+    float: none;
+  }
+  .last .last-col p {
+    font-size: 2vw;
+  }
+
+  .last .last-col p a {
+    font-size: 2vw;
+  }
+  .last .last-col.f {
+    left: 5%;
+  }
+  .last .last-col.s {
+    right: 5%;
+    transform: none;
+  }
+  .last .last-col.t {
+    margin-top: 2%;
+    right: 50%;
+    transform: translate(50%, 100%);
+  }
+  .footer .last .last-col.t p {
+    color: #1e1e1e;
+    margin-bottom: 5%;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero {
