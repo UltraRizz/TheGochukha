@@ -291,3 +291,98 @@ body {
     font-size: 3vw !important;
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .contact-content h1 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .contact-content h5 {
+    font-size: 3vw !important;
+  }
+  .content-section .text-contents {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .content-section .text-contents h5 {
+    text-align: center;
+    font-size: 2.5vw !important;
+  }
+  .content-section .text-contents p {
+    text-align: center;
+    font-size: 2vw !important;
+  }
+  .hotel-section {
+    flex-direction: column;
+    padding: 0;
+    gap: 0.5rem;
+  }
+  .hotel-section img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+  }
+  .text-content {
+    width: 100%;
+    padding: 0 15%;
+    margin-top: 0;
+  }
+  .text-content h5 {
+    font-size: 2.5vw !important;
+  }
+  .text-content p {
+    font-size: 2vw !important;
+  }
+  #contact-btn a {
+    font-size: 2vw !important;
+  }
+  .direction-section .text-cont {
+    width: 100%;
+    padding: 0 5%;
+    gap: 1rem;
+  }
+  .direction-section .text-cont h5 {
+    font-size: 2.5vw !important;
+    margin: 0;
+  }
+  .direction-section .text-cont h1 {
+    font-size: 3.8vw !important;
+    margin: 0;
+  }
+  .direction-section .text-cont p {
+    font-size: 2vw !important;
+    margin: 0;
+  }
+  .map-container {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .address-container {
+    width: 90%;
+    padding: 0;
+  }
+  .address-container h5 {
+    font-size: 2.6vw !important;
+  }
+  .address-container p {
+    font-size: 2vw !important;
+  }
+  .info-container {
+    width: 90%;
+    padding: 0;
+  }
+  .info-container h5 {
+    font-size: 2.6vw !important;
+  }
+  .info-container p {
+    font-size: 2vw !important;
+  }
+}
+
