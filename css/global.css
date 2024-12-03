@@ -442,9 +442,13 @@ input[type="number"] {
 
 /* Footer ============================================ */
 .footer {
-  max-width: 2000px;
   width: 100%;
   background: #3c3c3c;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer > h3 {
   color: #fff;
@@ -457,11 +461,11 @@ input[type="number"] {
 }
 
 .footer .footer-row {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 5rem;
+  padding: 5rem 5rem;
 }
 
 .footer-col {
@@ -476,6 +480,7 @@ input[type="number"] {
 }
 .footer-col:nth-child(2),
 .footer-col:last-child {
+  padding-top: 8rem;
   text-align: center;
 }
 .footer-col:last-child {
@@ -545,6 +550,43 @@ input[type="number"] {
 
 .footer-socials .social-link:hover {
   color: #000000; /* Change color on hover */
+}
+
+.footer .last {
+  width: 100%;
+  position: relative;
+  display: inline;
+  float: left;
+}
+
+.footer .last .last-col {
+  position: absolute;
+  display: inline;
+  float: left;
+}
+
+.last .last-col p {
+  color: #6c6c6c;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.last .last-col p a {
+  color: #6c6c6c;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.last .last-col.f {
+  left: 5%;
+}
+.last .last-col.s {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.last .last-col.t {
+  right: 15%;
 }
 
 /* navigation */
