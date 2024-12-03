@@ -152,7 +152,6 @@ button {
 
 /* Menu and Text */
 .menu {
-  font-size: 1rem;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -250,6 +249,214 @@ button {
 /* Active Utility Class (to show sticky-nav when needed) */
 .visible {
   display: block !important;
+}
+
+/* navigation */
+.hidden-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #aaaaaa;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hidden-nav.visible {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeSlideIn 0.7s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.hidden-nav.closing {
+  animation: fadeSlideOut 0.7s ease forwards;
+}
+
+/* Animation for Menu Items */
+.hidden-nav .menu-content h2 {
+  opacity: 0;
+  transform: translateX(-50px); /* Slide in from left */
+  animation: menuItemSlide 2s ease forwards;
+}
+
+.hidden-nav .menu-content h2:nth-child(1) {
+  animation-delay: 0.1s; /* Staggered delays */
+}
+
+.hidden-nav .menu-content h2:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hidden-nav .menu-content h2:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hidden-nav .menu-content h2:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.hidden-nav .menu-content h2:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.hidden-nav .menu-content h2:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.hidden-nav .menu-content h2:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.hidden-nav .menu-content h2:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.hidden-nav .menu-content h2:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+/* Keyframes for Staggered Animation */
+@keyframes menuItemSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Close Button */
+.close {
+  position: relative;
+  font-size: 1.2vw; /* Adjust size as needed */
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+}
+
+.close::before {
+  content: "✖";
+  margin-right: 8px;
+  font-size: inherit;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close:hover::before {
+  transform: rotate(360deg) scale(1.2);
+  color: #000000;
+}
+.content-section-nav {
+  display: flex;
+  align-items: center;
+}
+
+.content-section-nav .left {
+  width: 100%;
+  align-self: start;
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  gap: 2rem;
+}
+
+.hidden-nav .menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.content-section-nav .left h5 {
+  font-size: 1vw;
+  color: #ffffff;
+  margin: 0;
+  margin-block: 1rem;
+}
+
+.content-section-nav .left .menu-content .first a h2 {
+  font-size: 2vw;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  margin-top: 5%;
+  transition: color 0.5s;
+}
+.content-section-nav .left .menu-content .first a h2:hover {
+  color: #000000;
+}
+
+.hidden-nav .menu-content .second {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem; /* Spacing between icons */
+}
+
+.social-link {
+  animation: menuItemSlide 3s ease forwards;
+  text-decoration: none; /* Remove underline */
+  font-size: 2vw; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+.social-link:hover {
+  color: #000000; /* Change color on hover */
+}
+.more {
+  margin-right: 10%;
+}
+.more-links {
+  margin-top: 1%;
+  display: flex; /* Spacing between icons */
+  flex-direction: column;
+}
+.more-links a {
+  margin-top: 5%;
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1vw; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  transition: color 0.3s; /* Smooth hover effect */
+  animation: menuItemSlide 3s ease forwards;
+}
+.more-links a:hover {
+  color: #000000; /* Change color on hover */
 }
 
 /* #Progress
@@ -526,6 +733,7 @@ input[type="number"] {
 .footer-col img {
   width: 60%;
   object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .footer-col .links {
@@ -606,225 +814,148 @@ input[type="number"] {
   right: 15%;
 }
 
-/* navigation */
-.hidden-nav {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #aaaaaa;
-  color: white;
-  z-index: 1000;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+@media screen and (max-width: 1024px) {
 }
-
-.hidden-nav.visible {
-  display: block;
-  opacity: 1;
-  transform: translateX(0);
-  animation: fadeSlideIn 0.7s ease forwards;
-}
-
-@keyframes fadeSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 80vh;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+  .divider {
+    display: none;
   }
-}
 
-@keyframes fadeSlideOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
+  .primary-nav .Text {
+    display: none;
   }
-  100% {
-    opacity: 0;
-    transform: translateX(-100%);
+  .primary-nav .menu {
+    margin-left: 2%;
   }
-}
-
-.hidden-nav.closing {
-  animation: fadeSlideOut 0.7s ease forwards;
-}
-
-/* Animation for Menu Items */
-.hidden-nav .menu-content h2 {
-  opacity: 0;
-  transform: translateX(-50px); /* Slide in from left */
-  animation: menuItemSlide 2s ease forwards;
-}
-
-.hidden-nav .menu-content h2:nth-child(1) {
-  animation-delay: 0.1s; /* Staggered delays */
-}
-
-.hidden-nav .menu-content h2:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.hidden-nav .menu-content h2:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.hidden-nav .menu-content h2:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.hidden-nav .menu-content h2:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.hidden-nav .menu-content h2:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.hidden-nav .menu-content h2:nth-child(7) {
-  animation-delay: 0.7s;
-}
-
-.hidden-nav .menu-content h2:nth-child(8) {
-  animation-delay: 0.8s;
-}
-
-.hidden-nav .menu-content h2:nth-child(9) {
-  animation-delay: 0.9s;
-}
-
-/* Keyframes for Staggered Animation */
-@keyframes menuItemSlide {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
+  .sticky-nav ul {
+    display: none;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+
+  .title {
+    display: none;
   }
-}
+  .name {
+    display: none;
+  }
 
-/* Close Button */
-.close {
-  position: relative;
-  font-size: 1.2vw; /* Adjust size as needed */
-  color: #ffffff; /* Text color */
-  cursor: pointer; /* Indicate it's clickable */
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
-}
+  .hidden-nav {
+    background-color: #aaaaaaf7;
+    width: 100%;
+    height: fit-content;
+    padding-inline: 10%;
+  }
+  .close {
+    font-size: 2vw;
+  }
 
-.close::before {
-  content: "✖";
-  margin-right: 8px;
-  font-size: inherit;
-  color: inherit;
-  display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+  .hidden-nav .menu-content {
+    gap: 0;
+  }
 
-.close:hover::before {
-  transform: rotate(360deg) scale(1.2);
-  color: #000000;
-}
+  .content-section-nav .left h5 {
+    font-size: 1.6vw;
+    margin: 3rem 0 10% 0;
+  }
 
-.dividerN {
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3c3c3c;
-  z-index: 100;
-}
-.dividerN img {
-  width: 100%;
-  margin: 0 auto;
-  cursor: pointer;
-}
-.content-section-nav {
-  display: flex;
-  align-items: center;
-}
+  .content-section-nav .left .menu-content .first a h2 {
+    font-size: 3vw;
+  }
 
-.content-section-nav .left {
-  width: 100%;
-  align-self: start;
-  margin-top: 6%;
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  gap: 2rem;
-}
+  .hidden-nav .menu-content .second {
+    margin: 2% 0 5% 0;
+    width: 100%;
+  }
+  .socials {
+    margin-top: 5%;
+    gap: 1.5rem;
+  }
 
-.hidden-nav .menu-content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  gap: 2rem;
-}
+  .social-link {
+    font-size: 3vw;
+  }
+  .more-links {
+    margin-top: 10%;
+  }
+  .more-links a {
+    font-size: 2vw;
+  }
 
-.content-section-nav .left h5 {
-  font-size: 1vw;
-  color: #ffffff;
-  margin: 0;
-  margin-block: 1rem;
-}
+  .booking-section {
+    flex-direction: column;
+  }
+  .booking-section .header {
+    width: 100%;
+  }
+  .booking-section .header h2 {
+    font-size: 5vw;
+  }
+  .form {
+    width: 100%;
+    position: relative;
+  }
+  #book-btn {
+    width: 30%;
+    font-size: 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-.content-section-nav .left .menu-content .first a h2 {
-  font-size: 2vw;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 400;
-  margin-top: 5%;
-  transition: color 0.5s;
-}
-.content-section-nav .left .menu-content .first a h2:hover {
-  color: #000000;
-}
+  .footer > h3 {
+    font-size: 3vw;
+    padding: 0;
+  }
+  .footer .footer-row {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .footer-col:first-child h4 {
+    display: none;
+  }
+  .footer-col:first-child {
+    width: 50%;
+    border-right: none;
+  }
+  .footer-col:nth-child(2) {
+    display: none;
+  }
+  .footer-col:last-child {
+    padding: 0;
+    width: 50%;
+  }
+  .footer-col:last-child {
+    border-left: none;
+  }
+  .footer-col h4 {
+    font-size: 2vw;
+  }
+  .footer-row .footer-col h3 {
+    font-size: 2.5vw;
+  }
+  .footer-col .links li a {
+    font-size: 2vw;
+  }
 
-.hidden-nav .menu-content .second {
-  margin-top: 10%;
-  width: 100%;
-}
+  .footer .last {
+    display: block;
+    float: none;
+  }
+  .last .last-col p {
+    font-size: 2vw;
+  }
 
-.socials {
-  display: flex;
-  gap: 2rem; /* Spacing between icons */
-}
-
-.social-link {
-  animation: menuItemSlide 3s ease forwards;
-  text-decoration: none; /* Remove underline */
-  font-size: 2vw; /* Adjust icon size */
-  color: #fff; /* Icon color */
-  transition: color 0.3s; /* Smooth hover effect */
-}
-
-.social-link:hover {
-  color: #000000; /* Change color on hover */
-}
-.more {
-  margin-right: 10%;
-}
-.more-links {
-  margin-top: 1%;
-  display: flex; /* Spacing between icons */
-  flex-direction: column;
-}
-.more-links a {
-  margin-top: 5%;
-  text-decoration: none; /* Remove underline */
-  font-size: 1.1vw; /* Adjust icon size */
-  color: #fff; /* Icon color */
-  transition: color 0.3s; /* Smooth hover effect */
-  animation: menuItemSlide 3s ease forwards;
-}
-.more-links a:hover {
-  color: #000000; /* Change color on hover */
+  .last .last-col p a {
+    font-size: 2vw;
+  }
+  .last .last-col.f {
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  .last .last-col.t {
+    right: 50%;
+    transform: translate(50%, 100%);
+  }
 }
