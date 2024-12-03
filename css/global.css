@@ -818,8 +818,13 @@ input[type="number"] {
 }
 @media screen and (max-width: 480px) {
   .hero {
-    height: 80vh;
+    height: 70vh;
   }
+
+  .hero p {
+    font-size: 2.5vw;
+  }
+
   .divider {
     display: none;
   }
@@ -845,10 +850,10 @@ input[type="number"] {
     background-color: #aaaaaaf7;
     width: 100%;
     height: fit-content;
-    padding-inline: 10%;
+    padding-inline: 5%;
   }
   .close {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   .hidden-nav .menu-content {
@@ -856,12 +861,12 @@ input[type="number"] {
   }
 
   .content-section-nav .left h5 {
-    font-size: 1.6vw;
+    font-size: 3vw;
     margin: 3rem 0 10% 0;
   }
 
   .content-section-nav .left .menu-content .first a h2 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .hidden-nav .menu-content .second {
@@ -874,16 +879,17 @@ input[type="number"] {
   }
 
   .social-link {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .more-links {
     margin-top: 10%;
   }
   .more-links a {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .booking-section {
+    width: 100%;
     flex-direction: column;
   }
   .booking-section .header {
@@ -896,9 +902,31 @@ input[type="number"] {
     width: 100%;
     position: relative;
   }
+  .booking-form {
+    max-width: 80%;
+  }
+
+  .form-group label {
+    font-size: 3vw;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group select {
+    font-size: 3vw;
+  }
+
+  #message {
+    font-size: 2.5vw;
+  }
+
   #book-btn {
-    width: 30%;
-    font-size: 2vw;
+    width: 40%;
+    height: 5vh;
+    font-size: 4vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -911,6 +939,11 @@ input[type="number"] {
   .footer .footer-row {
     flex-wrap: wrap;
     height: fit-content;
+    padding: 2vh 6vh;
+  }
+  .footer-col {
+    width: 100%;
+    padding: 0;
   }
   .footer-col:first-child h4 {
     display: none;
@@ -923,6 +956,7 @@ input[type="number"] {
     display: none;
   }
   .footer-col:last-child {
+    text-align: end;
     padding: 0;
     width: 50%;
   }
@@ -951,10 +985,14 @@ input[type="number"] {
     font-size: 2vw;
   }
   .last .last-col.f {
-    left: 50%;
-    transform: translate(-50%, -100%);
+    left: 5%;
+  }
+  .last .last-col.s {
+    right: 5%;
+    transform: none;
   }
   .last .last-col.t {
+    margin-top: 5%;
     right: 50%;
     transform: translate(50%, 100%);
   }
