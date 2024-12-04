@@ -324,3 +324,112 @@ body {
     font-size: 3vw;
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .contact-content h1 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .contact-content h5 {
+    width: 100%;
+    font-size: 3vw !important;
+  }
+  .content-section {
+    width: 100%;
+    padding: 10% 5%;
+    gap: 1rem;
+  }
+  .content-section .first {
+    width: 100%;
+    margin: 0;
+  }
+  .content-section .first h5 {
+    font-size: 2.5vw !important;
+    text-align: center;
+  }
+  .content-section .second {
+    width: 100%;
+    margin: 0;
+  }
+  .content-section .second h2 {
+    font-size: 3vw !important;
+    text-align: center;
+  }
+  .room-details {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .info h1 {
+    font-size: 4vw !important;
+    margin-left: 0;
+    width: 100%;
+  }
+  .info p {
+    font-size: 2vw !important;
+    width: 80%;
+  }
+  .details {
+    width: 80%;
+  }
+  .key {
+    font-size: 2.5vw !important;
+  }
+  .value {
+    font-size: 2.5vw !important;
+  }
+  .book-btn button {
+    width: 30vw;
+    height: 4vh;
+    font-size: 3vw;
+  }
+  .button-icon {
+    display: none;
+  }
+
+  .information {
+    margin: 3rem;
+    width: 90%;
+  }
+  .information h5 {
+    font-size: 2vw !important;
+    margin-bottom: 0.5rem;
+  }
+  .information p {
+    font-size: 2vw !important;
+    margin-bottom: 2rem;
+  }
+  .facility {
+    margin: 0;
+  }
+  .whitebg {
+    font-size: 2vw;
+  }
+  #large-div-text {
+    margin: 5%;
+    padding: 10%;
+  }
+  .facility-item i{
+    font-size: 3vw;
+  }
+  .facility-item p{
+    font-size: 2vw;
+  }
+}

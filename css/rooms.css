@@ -209,3 +209,68 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .hero-content h1 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .hero-content h5 {
+    font-size: 3vw !important;
+  }
+  .content-section div {
+    width: 90%;
+    padding: 5% 5%;
+  }
+  .content-section div h5 {
+    font-size: 2.5vw !important;
+  }
+  .content-section div p {
+    font-size: 2vw !important;
+  }
+  .room-details {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card.s {
+    flex-direction: column-reverse;
+    padding: 3% 0;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .info {
+    width: 100%;
+    gap: 1rem;
+  }
+  .info h1 {
+    font-size: 4vw !important;
+    margin-left: 0;
+    width: 100%;
+  }
+  .info p {
+    font-size: 2vw !important;
+    width: 80%;
+  }
+  .details {
+    width: 80%;
+  }
+  .key {
+    font-size: 2.5vw !important;
+  }
+  .value {
+    font-size: 2.5vw !important;
+  }
+  .divider-container img {
+    width: 100%;
+  }
+}
+
