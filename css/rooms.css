@@ -92,21 +92,21 @@ body {
   font-weight: 300;
 }
 
-.cta-button a {
-  text-decoration: none;
-  color: #fff;
-  padding: 2rem 2.5rem;
+.book-btn {
+  align-self: end;
 }
-
 .card {
   display: flex;
   align-items: flex-start;
   gap: 15rem;
   width: 100%;
 }
+.image {
+  width: 40%;
+}
 .image img {
-  width: 550px;
-  height: 550px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .info {
@@ -120,8 +120,8 @@ body {
 }
 
 .info h1 {
+  font-size: 3vw;
   text-align: center;
-  font-size: 40px;
   color: white;
   margin-bottom: 10px;
   margin-left: 6rem;

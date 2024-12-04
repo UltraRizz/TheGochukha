@@ -36,10 +36,9 @@
         <ul>
             <li><a href="#rooms">ACCOMMODATION</a></li>
             <li><a href="#dining">RESTAURANT</a></li>
-            <li><a href="#services">BAR</a></li>
             <li><a href="#cafe">CAFÉ</a></li>
-            <li><a href="#contact">EVENTS</a></li>
-            <li><a href="#contact">BOOKING</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#booking">BOOKING</a></li>
         </ul>
     </section>
 
@@ -55,8 +54,12 @@
     </section>
 
     <div class="name">
-        <h1 style="font-family: 'Bebas Neue', sans-serif !important;">GOCHUKHA HOTEL</h1>
+        <h1 style="font-family: 'Bebas Neue', sans-serif !important;" id="events">
+            <span class="text-loop">GOCHUKHA HOTEL</span>
+            <span class="text-loop">GOCHUKHA HOTEL</span>
+        </h1>
     </div>
+    
 
     <!-- Hidden Full-Screen Navigation -->
     <div class="hidden-nav" id="hiddenNav">
@@ -74,11 +77,11 @@
                             <h2>ROOMS</h2>
                         </a><a href="restaurant.html">
                             <h2>RESTAURANT</h2>
-                        </a><a href="#">
+                        </a><a href="barCafe.html">
                             <h2>CAFÉ</h2>
-                        </a><a href="#">
+                        </a><a href="barCafe.html">
                             <h2>BAR</h2>
-                        </a><a href="#">
+                        </a><a href="#events">
                             <h2>EVENTS</h2>
                         </a><a href="#booking">
                             <h2>BOOKING</h2>
@@ -189,7 +192,7 @@
                 authentic as they are unforgettable. At Gochukha, every meal is a celebration of taste
                 and a promise of something truly unique.
             </p>
-            <button class="cus-btn">DISCOVER OUR MENU</button>
+            <button class="cta-button b" id="cus-btn">DISCOVER OUR MENU</button>
         </div>
     </section>
     <section class="gallery">
@@ -202,7 +205,7 @@
                 breathtaking views of Bhutan’s landscapes, and the moments that make every stay unforgettable. Let our
                 visuals inspire
                 your next visit and give you a glimpse of the serene luxury that awaits.</p>
-            <button class="gal-btn">VIEW OUR GALLERY</button>
+            <button class="cta-button b" id="gal-btn">VIEW OUR GALLERY</button>
         </div>
 
     </section>
@@ -218,7 +221,7 @@
                 at the spaces and
                 moments that make our café the perfect spot to relax and indulge.
             </p>
-            <button class="cafe-btn">EXPLORE OUR CAFÉ</button>
+            <button class="cta-button" id="cafe-btn">EXPLORE OUR CAFÉ</button>
         </div>
         <img src="./assets/img/cafe.png" alt="Gochukha Hotel" />
     </section>
@@ -292,8 +295,7 @@
         <div class="footer-row">
             <div class="footer-col">
                 <img src="./assets/img/Gochuka logo 2.png" alt="">
-                <h4>Contact</h4>
-                <h3>Gochukha Resturant and Café <br>
+                <h3>Gochukha Restaurant and Café <br>
                     Bapi Lam 13, Babesa <br>
                     Thimphu <br>
                     Bhutan</h3>
@@ -314,12 +316,11 @@
             <div class="footer-col">
                 <h4>Navigation</h4>
                 <ul class="links">
-                    <li><a href="#">ACCOMODATION</a></li>
-                    <li><a href="#">RESTAURANT</a></li>
-                    <li><a href="#">BAR</a></li>
-                    <li><a href="#">CAFÉ</a></li>
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">BOOKING</a></li>
+                    <li><a href="#rooms">ACCOMMODATION</a></li>
+                    <li><a href="#dining">RESTAURANT</a></li>
+                    <li><a href="#cafe">CAFÉ</a></li>
+                    <li><a href="#events">EVENTS</a></li>
+                    <li><a href="#booking">BOOKING</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -347,8 +348,6 @@
             </div>
         </div>
     </section>
-
-
 </body>
 <script src="./scripts/nav.js">
 </script>

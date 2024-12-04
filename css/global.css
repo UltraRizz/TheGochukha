@@ -61,15 +61,49 @@ h5 {
   text-transform: uppercase;
 }
 
+img:not(.divider):not(.hero-logo) {
+  opacity: 1;
+  transform: translateY(5%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+img:not(.divider):not(.hero-logo):hover {
+  transform: scale(1.02) !important; /* Slightly enlarge the image */
+  transition: transform 0.2s ease;
+  filter: brightness(0.7);
+}
+
+/* Active state when the image is visible */
+img:not(.divider):not(.hero-logo).animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cta-button {
   margin-top: 20px;
   padding: 1vw 2vw;
   font-size: 1vw;
-  color: #fff;
+  color: #e5e5e5;
   background: none; /* Primary button color */
-  border: 1px solid white;
+  border: 3px solid #e5e5e5;
   border-radius: 50px;
   cursor: pointer;
+  font-weight: 700;
+}
+.cta-button a {
+  color: inherit;
+}
+.cta-button:hover {
+  background-color: #e5e5e5;
+  color: #000 !important;
+  transform: scale(1.05);
+  transition: background-color 0.6s ease, color 0.5s ease, transform 0.2s ease !important;
+}
+.cta-button.b:hover {
+  background-color: #000;
+  color: #fff !important;
+  transform: scale(1.05);
+  transition: background-color 0.6s ease, color 0.5s ease, transform 0.2s ease !important;
 }
 button {
   font-size: 1vw;
@@ -102,7 +136,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  bottom: 15%;
+  bottom: 5%;
   margin: 0 auto;
 }
 
@@ -141,11 +175,11 @@ button {
 }
 
 .name h1 {
-  font-size: 7rem;
+  font-size: 6vw;
   color: #3c3c3c51;
   text-transform: uppercase;
   transform: scaleY(1.4);
-  letter-spacing: 4rem;
+  letter-spacing: 2vw;
   text-align: center;
   margin-bottom: 0;
 }
@@ -153,16 +187,16 @@ button {
 /* Menu and Text */
 .menu {
   color: #fff;
-  border-radius: 5px;
   cursor: pointer;
   z-index: 3;
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 1vw;
 }
 
 .hamburger {
-  font-size: 1.2rem;
-  margin-right: 10px;
+  margin-right: 0.5vw;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -199,6 +233,7 @@ button {
 }
 
 .primary-nav .Text a {
+  font-size: 1vw;
   color: #fff;
 }
 
@@ -207,7 +242,7 @@ button {
   padding: 15px 0;
   text-align: center;
   position: fixed;
-  top: 60px; /* Appears below the primary nav */
+  top: 10vh; /* Appears below the primary nav */
   width: 100%;
   z-index: 200; /* Ensures it appears above the content */
   display: none; /* Initially hidden */
@@ -230,11 +265,11 @@ button {
 
 .sticky-nav ul li a {
   font-size: 1vw;
-  color: #9c9c9c;
+  color: #fff;
   text-transform: uppercase;
   margin: 0 30px;
   transition: color 0.3s ease;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 .sticky-nav ul li a:hover {
@@ -516,7 +551,7 @@ button {
 .booking-section {
   padding: 5rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/img/background.png") no-repeat center center/cover;
+    url("../assets/img/background.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -578,19 +613,19 @@ button {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #949494;
+  color: #cfcfcf;
   opacity: 1; /* Ensure full opacity for the placeholder text */
 }
 
 /* Styling for the options in the dropdown */
 .form-group select option {
-  color: #949494; /* Set the text color for dropdown options */
+  color: #cfcfcf; /* Set the text color for dropdown options */
   background-color: #000; /* Optional: Ensure options are visible against dark backgrounds */
 }
 
 /* For the dropdown itself when no value is selected */
 .form-group select {
-  color: #949494; /* Default color for the dropdown text */
+  color: #cfcfcf; /* Default color for the dropdown text */
 }
 
 .form-group select:focus {
@@ -600,12 +635,12 @@ button {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1) grayscale(100%) brightness(50%);
+  filter: invert(1) grayscale(100%) brightness(70%);
   cursor: pointer;
 }
 
 input[type="date"]::-webkit-datetime-edit {
-  color: #949494; /* Placeholder color */
+  color: #cfcfcf; /* Placeholder color */
 }
 /* Styling for the date input text when a value is selected */
 input[type="date"]:valid {
