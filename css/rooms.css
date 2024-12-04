@@ -149,6 +149,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .hero-content {
+    gap: 2rem;
+  }
   .hero-content h1 {
     width: 100%;
     font-size: 6vw !important;

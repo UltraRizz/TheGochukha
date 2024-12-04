@@ -1060,6 +1060,10 @@ input[type="number"] {
   }
 }
 @media screen and (max-width: 480px) {
+  .hero-content {
+    gap: 2rem;
+  }
+
   img:not(.divider):not(.hero-logo) {
     opacity: 1;
     transform: translateY(5%);
@@ -1110,7 +1114,7 @@ input[type="number"] {
     padding-inline: 5%;
   }
   .menu {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .close {
     font-size: 2.5vw;
