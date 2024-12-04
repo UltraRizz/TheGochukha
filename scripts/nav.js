@@ -203,3 +203,24 @@ document
         document.getElementById("responseMessage").style.color = "red";
       });
   });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img");
+
+  const handleScrollAnimation = () => {
+    images.forEach((img) => {
+      const rect = img.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Add class if the image is in the viewport
+      if (rect.top < windowHeight * 0.85) {
+        img.classList.add("animate");
+      }
+    });
+  };
+
+  // Run on load and on scroll
+  window.addEventListener("scroll", handleScrollAnimation);
+  handleScrollAnimation();
+});

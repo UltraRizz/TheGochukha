@@ -61,6 +61,24 @@ h5 {
   text-transform: uppercase;
 }
 
+img:not(.divider):not(.hero-logo) {
+  opacity: 1;
+  transform: translateY(5%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+img:not(.divider):not(.hero-logo):hover {
+  transform: scale(1.02) !important; /* Slightly enlarge the image */
+  transition: transform 0.2s ease;
+  filter: brightness(0.7);
+}
+
+/* Active state when the image is visible */
+img:not(.divider):not(.hero-logo).animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cta-button {
   margin-top: 20px;
   padding: 1vw 2vw;
@@ -78,10 +96,14 @@ h5 {
 .cta-button:hover {
   background-color: #e5e5e5;
   color: #000 !important;
+  transform: scale(1.05);
+  transition: background-color 0.6s ease, color 0.5s ease, transform 0.2s ease !important;
 }
 .cta-button.b:hover {
   background-color: #000;
   color: #fff !important;
+  transform: scale(1.05);
+  transition: background-color 0.6s ease, color 0.5s ease, transform 0.2s ease !important;
 }
 button {
   font-size: 1vw;
@@ -114,7 +136,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  bottom: 15%;
+  bottom: 5%;
   margin: 0 auto;
 }
 
@@ -157,7 +179,7 @@ button {
   color: #3c3c3c51;
   text-transform: uppercase;
   transform: scaleY(1.4);
-  letter-spacing: 4vw;
+  letter-spacing: 2vw;
   text-align: center;
   margin-bottom: 0;
 }
