@@ -153,11 +153,11 @@ button {
 }
 
 .name h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   color: #3c3c3c51;
   text-transform: uppercase;
   transform: scaleY(1.4);
-  letter-spacing: 4rem;
+  letter-spacing: 4vw;
   text-align: center;
   margin-bottom: 0;
 }
