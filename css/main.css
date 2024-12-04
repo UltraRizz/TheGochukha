@@ -526,7 +526,7 @@ body {
   }
   .cta-button {
     font-size: 2.5vw !important;
-    padding: 2.5vw 5vw !important;
+    width: fit-content;
   }
 
   .room-types {
@@ -583,7 +583,7 @@ body {
     width: 100%;
     font-size: 3vw;
   }
-  .cus-btn {
+  #cus-btn {
     width: 50%;
     font-size: 2.5vw !important;
     padding: 2.5vw 5vw !important;
@@ -611,7 +611,7 @@ body {
     font-size: 3vw;
     width: 100%;
   }
-  .gal-btn {
+  #gal-btn {
     width: 50%;
     font-size: 2.5vw !important;
     padding: 2.5vw 5vw !important;
@@ -640,7 +640,7 @@ body {
     width: 100%;
     font-size: 3vw;
   }
-  .cafe-btn {
+  #cafe-btn {
     width: 50%;
     font-size: 2.5vw !important;
     padding: 2.5vw 5vw !important;
