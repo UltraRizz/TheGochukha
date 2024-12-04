@@ -39,6 +39,30 @@ body {
   --p-font: 1rem;
 }
 
+/* Animation styles for text elements */
+p:not(.last-col p),
+h1:not(.loop-text),
+h2,
+h5,
+button,
+form,
+a:not(.last-col a) {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+p:not(.last-col p).visible,
+h1:not(.loop-text).visible,
+h2.visible,
+h5.visible,
+button.visible,
+form.visible,
+a:not(.last-col p).visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;

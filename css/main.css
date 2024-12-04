@@ -341,9 +341,10 @@ body {
   }
 }
 
-#events {
-  display: flex;
-  overflow: hidden;
+.name #events {
+  display: block; /* Keep it as a container */
+  overflow: hidden; /* Ensure content doesn't spill outside */
+  white-space: nowrap; /* Force all children to stay on the same line */
   width: 100%;
 }
 

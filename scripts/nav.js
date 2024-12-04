@@ -204,7 +204,6 @@ document
       });
   });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll("img");
 
@@ -224,3 +223,26 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", handleScrollAnimation);
   handleScrollAnimation();
 });
+
+// Function to handle scroll animations
+function handleScrollAnimations() {
+  const elements = document.querySelectorAll(
+    "img, p, h1, h2, h5, button, form, a"
+  ); // Include text elements
+
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // If the element is within the viewport, add the visible class
+    if (rect.top <= windowHeight * 0.75) {
+      element.classList.add("visible");
+    }
+  });
+}
+
+// Attach the scroll event
+document.addEventListener("scroll", handleScrollAnimations);
+
+// Initial check on page load
+handleScrollAnimations();
