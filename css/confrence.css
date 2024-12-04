@@ -17,7 +17,7 @@ body {
 
 .contact-content h1 {
   width: 70%;
-  letter-spacing: 1vw;
+  letter-spacing: 0.1rem;
   color: #fff;
   margin: 0;
   font-weight: 300;
@@ -101,9 +101,13 @@ body {
   width: 100%;
 }
 
+.image {
+  width: 40%;
+}
+
 .image img {
-  width: 550px;
-  height: 550px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .info {
@@ -129,29 +133,6 @@ body {
   font-weight: 300;
   line-height: 1.3;
   letter-spacing: 0.1rem;
-}
-
-.book-btn button {
-  position: relative;
-  width: 12vw;
-  height: 6vh;
-  background-color: #f7e7be;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #000;
-  border-radius: 30px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.button-icon {
-  position: absolute;
-  top: 15px;
-  right: 20px;
 }
 
 .information {
@@ -182,13 +163,13 @@ body {
 }
 
 #large-div-text {
-  padding: 5rem;
+  padding: 5% 3%;
   border: 3px solid white;
   position: relative;
-  margin-top: -10px;
+  margin-top: 5%;
   z-index: 0;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 2rem;
 }
 
@@ -197,7 +178,7 @@ body {
   z-index: 10;
   position: absolute;
   right: 50%;
-  font-size: 1rem;
+  font-size: 3vw;
   transform: translate(50%, -50%);
 }
 
@@ -205,7 +186,7 @@ body {
   background-color: #949494;
   padding: 0.5em;
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .facility-icons {
@@ -221,15 +202,18 @@ body {
 }
 
 .facility-item i {
-  font-size: 3rem;
+  font-size: 2vw;
   color: white;
 }
 
 .facility-item p {
   margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 1vw;
   color: white;
   margin-bottom: 1rem;
+}
+.footer .footer-row {
+  justify-content: center !important;
 }
 
 @media screen and (max-width: 480px) {
@@ -333,10 +317,10 @@ body {
     margin: 5%;
     padding: 10%;
   }
-  .facility-item i{
+  .facility-item i {
     font-size: 5vw;
   }
-  .facility-item p{
+  .facility-item p {
     font-size: 3vw;
   }
 }

@@ -65,20 +65,17 @@ body {
 }
 
 .dining h1 {
-  font-size: 6vw; /* Adjust size as needed */
   margin: 10px 0;
   color: #ffff;
   font-weight: 300;
 }
 
 .dining h5 {
-  font-size: 24px;
   margin: 10px 0;
   color: #fff; /* Optional color */
 }
 
 .dining p {
-  font-size: 16px;
   margin: 10px 0;
   color: #fff; /* Optional color */
   max-width: 600px; /* Optional: to restrict paragraph width */
@@ -132,8 +129,9 @@ body {
   width: 65%;
 }
 .room-text h1 {
+  font-size: 5vw;
   font-weight: 200;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
 }
 
 #room-btn {
@@ -146,7 +144,7 @@ body {
 .slider-container {
   margin: 0 auto;
   padding: 5rem 0;
-  width: 50%;
+  width: 40%;
   overflow: hidden;
   position: relative;
 }
@@ -245,13 +243,11 @@ body {
 }
 
 .cafe-section .text-content h5 {
-  font-size: 1.2rem;
   color: rgb(255, 255, 255);
   margin: 0;
 }
 
 .cafe-section .text-content h2 {
-  font-size: 36px;
   color: rgb(255, 255, 255);
   width: 80%;
   margin: 0;
@@ -259,32 +255,19 @@ body {
 }
 
 .cafe-section .text-content p {
-  font-size: 1rem;
   color: rgb(255, 255, 255);
   line-height: 1.6;
   margin: 0;
   width: 60%;
 }
 
-.cus-btn {
-  margin-block: 20px;
-  padding: 1vw 2vw;
-  color: #000000;
-  background: none; /* Primary button color */
-  border: 1px solid #000000;
-  border-radius: 50px;
-  cursor: pointer;
-  width: 40%;
+#cus-btn {
+  width: 30%;
+  color: #000;
+  border: 1px solid #000;
 }
-.cafe-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  width: 207px;
-  background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  cursor: pointer;
+#cafe-btn {
+  width: 30%;
 }
 .gallery {
   padding-block: 5%;
@@ -313,45 +296,37 @@ body {
 }
 
 .gallery .content h5 {
-  font-size: 1.2rem;
   color: black;
   margin: 0;
 }
 
 .gallery .content h1 {
-  font-size: 36px;
   color: black;
-  width: 60%;
+  width: 100%;
   margin: 0;
   font-weight: 300;
 }
 .gallery .content p {
-  font-size: 1rem;
   color: black;
   line-height: 1.6;
   margin: 0;
   width: 56%;
 }
 
-.gal-btn {
-  margin-top: 20px;
-  padding: 1vw 2vw;
+#gal-btn {
   color: #000000;
-  background: none; /* Primary button color */
   border: 1px solid #000000;
-  border-radius: 50px;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
-  .content-section{
+  .content-section {
     gap: 3rem;
   }
   .content-section p {
     font-size: 1.5vw;
     width: 80%;
   }
-  
+
   .room-types {
     flex-direction: column;
   }
