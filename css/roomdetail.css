@@ -273,6 +273,7 @@ body {
   .image img {
     width: 100%;
     height: auto;
+    margin: 0;
   }
   .info {
     width: 100%;

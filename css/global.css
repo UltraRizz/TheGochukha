@@ -1059,6 +1059,24 @@ input[type="number"] {
   }
 }
 @media screen and (max-width: 480px) {
+  img:not(.divider):not(.hero-logo) {
+    opacity: 1;
+    transform: translateY(5%);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  img:not(.divider):not(.hero-logo):hover {
+    transform: scale(1) !important; /* Slightly enlarge the image */
+    transition: transform 0.2s ease;
+    filter: brightness(0.7);
+  }
+
+  /* Active state when the image is visible */
+  img:not(.divider):not(.hero-logo).animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .hero p {
     font-size: 2.5vw;
   }
