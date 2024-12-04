@@ -89,6 +89,7 @@ img:not(.divider):not(.hero-logo).animate {
   border-radius: 50px;
   cursor: pointer;
   font-weight: 700;
+  text-transform: uppercase !important;
 }
 .cta-button a {
   color: inherit;
