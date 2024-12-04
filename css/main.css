@@ -320,26 +320,24 @@ body {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
-
 
 /* Apply the animation to the element */
 .title {
   animation: fadeIn 2s ease-in-out;
 }
 
-
 @keyframes loopText {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -357,7 +355,7 @@ body {
   animation: loopText 10s linear infinite;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 540px) and (max-width: 1024px) {
   .content-section {
     gap: 3rem;
   }

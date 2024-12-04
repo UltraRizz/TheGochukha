@@ -325,7 +325,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 540px) and (max-width: 1024px) {
   .contact-content h1 {
     width: 100%;
     font-size: 6vw !important;
@@ -426,10 +426,10 @@ body {
     margin: 5%;
     padding: 10%;
   }
-  .facility-item i{
+  .facility-item i {
     font-size: 3vw;
   }
-  .facility-item p{
+  .facility-item p {
     font-size: 2vw;
   }
 }

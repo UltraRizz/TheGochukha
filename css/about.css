@@ -218,7 +218,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 540px) and (max-width: 1024px) {
   .hero-content h5 {
     font-size: 3vw;
   }

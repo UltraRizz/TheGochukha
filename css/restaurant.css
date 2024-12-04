@@ -279,7 +279,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 540px) and (max-width: 1024px) {
   .hero-content h1 {
     width: 100%;
     font-size: 6vw !important;
@@ -358,4 +358,3 @@ body {
     font-size: 2vw !important;
   }
 }
-
