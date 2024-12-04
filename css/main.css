@@ -318,6 +318,45 @@ body {
   border: 1px solid #000000;
 }
 
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+/* Apply the animation to the element */
+.title {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes loopText {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+#events {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-loop {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: inherit;
+  margin-right: 2%;
+  animation: loopText 10s linear infinite;
+}
+
 @media screen and (max-width: 1024px) {
   .content-section {
     gap: 3rem;
