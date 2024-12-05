@@ -534,7 +534,7 @@ body {
     flex-direction: column;
   }
   #room-btn {
-    display: none;
+    display: none !important;
   }
 
   .dining {
@@ -613,7 +613,7 @@ body {
     width: 100%;
   }
   #gal-btn {
-    width: 50%;
+    width: 100%;
     font-size: 2.5vw !important;
     padding: 2.5vw 5vw !important;
   }
