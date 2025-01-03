@@ -109,72 +109,72 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateProgress);
 });
 
-document
-  .getElementById("bookingForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+  document
+    .getElementById("bookingForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
 
-    // Clear previous error or success messages
-    document.getElementById("responseMessage").innerHTML = ""; // Use innerHTML to allow line breaks
-    document.getElementById("responseMessage").style.color = "green";
+      // Clear previous error or success messages
+      document.getElementById("responseMessage").innerHTML = ""; // Use innerHTML to allow line breaks
+      document.getElementById("responseMessage").style.color = "green";
 
-    // Initial form validation
-    let errors = [];
+      // Initial form validation
+      let errors = [];
 
-    // Validate Full Name
-    const name = document.getElementById("name").value;
-    if (!name.match(/^[A-Za-z\s]{3,20}$/)) {
-      errors.push("Please enter a valid name (3-20 letters).");
-    }
+      // Validate Full Name
+      const name = document.getElementById("name").value;
+      if (!name.match(/^[A-Za-z\s]{3,20}$/)) {
+        errors.push("Please enter a valid name (3-20 letters).");
+      }
 
-    // Validate Email
-    const email = document.getElementById("email").value;
-    if (!email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zAZ0-9.-]{2,4}$/)) {
-      errors.push("Please enter a valid email address.");
-    }
+      // Validate Email
+      const email = document.getElementById("email").value;
+      if (!email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zAZ0-9.-]{2,4}$/)) {
+        errors.push("Please enter a valid email address.");
+      }
 
-    // Validate Phone Number (only check if it's not empty)
-    const phone = document.getElementById("pnumber").value;
-    if (phone.trim() === "") {
-      errors.push("Please enter a phone number.");
-    }
+      // Validate Phone Number (only check if it's not empty)
+      const phone = document.getElementById("pnumber").value;
+      if (phone.trim() === "") {
+        errors.push("Please enter a phone number.");
+      }
 
-    // Validate Room Preference
-    const room = document.getElementById("room-selection").value;
-    if (room === "") {
-      errors.push("Please select a room preference.");
-    }
+      // Validate Room Preference
+      const room = document.getElementById("room-selection").value;
+      if (room === "") {
+        errors.push("Please select a room preference.");
+      }
 
-    // Validate Number of Guests
-    const guests = document.getElementById("guest-number").value;
-    if (guests < 1) {
-      errors.push("Please enter a valid number of guests.");
-    }
+      // Validate Number of Guests
+      const guests = document.getElementById("guest-number").value;
+      if (guests < 1) {
+        errors.push("Please enter a valid number of guests.");
+      }
 
-    // Validate Check-in and Check-out Dates
-    const checkin = document.getElementById("checkin-date").value;
-    const checkout = document.getElementById("checkout-date").value;
-    if (!checkin || !checkout) {
-      errors.push("Please select both check-in and check-out dates.");
-    }
+      // Validate Check-in and Check-out Dates
+      const checkin = document.getElementById("checkin-date").value;
+      const checkout = document.getElementById("checkout-date").value;
+      if (!checkin || !checkout) {
+        errors.push("Please select both check-in and check-out dates.");
+      }
 
-    // Validate Message (only check if it's not empty)
-    const message = document.getElementById("message").value;
-    if (message.trim() === "") {
-      errors.push("Please enter a message.");
-    }
+      // Validate Message (only check if it's not empty)
+      const message = document.getElementById("message").value;
+      if (message.trim() === "") {
+        errors.push("Please enter a message.");
+      }
 
-    // If there are errors, display them
-    if (errors.length > 0) {
-      document.getElementById("responseMessage").innerHTML =
-        errors.join("<br>");
-      document.getElementById("responseMessage").style.color = "red"; // Show errors in red
-      return; // Stop the form submission if validation fails
-    }
+      // If there are errors, display them
+      if (errors.length > 0) {
+        document.getElementById("responseMessage").innerHTML =
+          errors.join("<br>");
+        document.getElementById("responseMessage").style.color = "red"; // Show errors in red
+        return; // Stop the form submission if validation fails
+      }
 
-    // Show "Sending..." message only after validation passes
-    document.getElementById("responseMessage").textContent =
-      "Sending your booking details... Please wait.";
+      // Show "Sending..." message only after validation passes
+      document.getElementById("responseMessage").textContent =
+        "Sending your booking details... Please wait.";
 
     // Create FormData object to handle the form submission
     var formData = new FormData(this);
