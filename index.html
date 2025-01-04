@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gochukha</title>
+    <title>The Gochukha</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/navigation.css">
@@ -34,19 +34,18 @@
     <section class="sticky-nav hidden">
         <hr>
         <ul>
+            <li><a href="#events">EVENTS</a></li>
             <li><a href="#rooms">ACCOMMODATION</a></li>
             <li><a href="#dining">RESTAURANT</a></li>
-            <li><a href="#services">BAR</a></li>
             <li><a href="#cafe">CAFÉ</a></li>
-            <li><a href="#contact">EVENTS</a></li>
-            <li><a href="#contact">BOOKING</a></li>
+            <li><a href="#booking">BOOKING</a></li>
         </ul>
     </section>
 
     <section class="hero" style='background: url("../assets/img/Hero.png") no-repeat center center/cover;'>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="./assets/img/Gochuka logo 2.png" alt="Gochukha Hotel logo" class="hero-logo">
+            <img src="./assets/img/Gochuka logo 2.png" alt="The Gochukha Hotel logo" class="hero-logo">
             <p>a paradise between green land and the blue sky</p>
         </div>
         <div class="title">
@@ -55,7 +54,7 @@
     </section>
 
     <div class="name">
-        <h1 style="font-family: 'Bebas Neue', sans-serif !important;">GOCHUKHA HOTEL</h1>
+        <h1 style="font-family: 'Bebas Neue', sans-serif !important;">THE GOCHUKHA HOTEL</h1>
     </div>
 
     <!-- Hidden Full-Screen Navigation -->
@@ -74,14 +73,10 @@
                             <h2>ROOMS</h2>
                         </a><a href="restaurant.html">
                             <h2>RESTAURANT</h2>
-                        </a><a href="#">
+                        </a><a href="cafe.html">
                             <h2>CAFÉ</h2>
-                        </a><a href="#">
+                        </a><a href="barCafe.html">
                             <h2>BAR</h2>
-                        </a><a href="#">
-                            <h2>EVENTS</h2>
-                        </a><a href="#booking">
-                            <h2>BOOKING</h2>
                         </a><a href="about.html">
                             <h2>ABOUT US</h2>
                         </a><a href="contact.html">
@@ -91,11 +86,11 @@
                     <div class="second">
                         <h5>SOCIAL MEDIA</h5>
                         <div class="socials">
-                            <a href="https://www.instagram.com" target="_blank" class="social-link"><i
-                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/thegochukha.hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.facebook.com" target="_blank" class="social-link"><i
                                     class="fab fa-facebook"></i></a>
-                            <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i
+                            <a href="https://wa.me/+97577974563" target="_blank" class="social-link"><i
                                     class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
@@ -112,9 +107,9 @@
     </div>
 
     <section class="content-section">
-        <div class="left">
+        <div class="left" id="events">
             <div class="img">
-                <img src="./assets/img/eventImg.png" alt=" Gochuka Hotel EVENTS">
+                <img src="./assets/img/eventImg.png" alt=" The Gochukha Hotel EVENTS">
             </div>
         </div>
         <div class="right">
@@ -124,7 +119,7 @@
                 Join us for an exclusive food tasting event where you’ll savor handpicked delicacies crafted to delight
                 your palate.
             </p>
-            <button class="cta-button">DISCOVER NOW</button>
+            <!-- <button class="cta-button">DISCOVER NOW</button> -->
         </div>
     </section>
 
@@ -132,7 +127,9 @@
         <div class="room-types">
             <div class="room">
                 <div class="room-overlay">
-                    <img src="./assets/img/room1.png" alt="Gochuka Deluxe Room">
+                    <a href="PremiumDeluxeRoom.html">
+                        <img src="./assets/img/room1.png" alt="The Gochukha Premium Deluxe Room">
+                    </a>
                     <div class="room-text">
                         <h1>Premium Deluxe Room</h1>
                     </div>
@@ -140,13 +137,16 @@
             </div>
             <div class="room">
                 <div class="room-overlay">
-                    <img src="./assets/img/room2.png" alt=" Gochukha Suite Room">
+                    <a href="deluxeRoom.html">
+                        <img src="./assets/img/room2.png" alt=" The Gochukha Deluxe Room">
+                    </a>
                     <div class="room-text">
                         <h1>Deluxe Room with twin beds</h1>
                     </div>
                 </div>
             </div>
-            <button class="cta-button" id="room-btn">OUR ACCOMMODATIONS</button>
+            <button class="cta-button" id="room-btn" onclick="location.href='rooms.html'">OUR ACCOMMODATIONS</button>
+
         </div>
     </section>
 
@@ -154,10 +154,12 @@
     <section class="dining">
         <h1> THE GOCHUKHA</h1>
         <h5>A Legacy of Elegance and Bhutanese Charm</h5>
-        <p>Nestled in Bhutan’s heart, Gochukha blends traditional charm with modern luxury. More than a hotel, it’s a
+        <p>Nestled in the heart of Thimphu, the capital city of Bhutan, The Gochukha blends traditional charm with
+            modern
+            luxury. More than a hotel, it’s a
             gateway to authentic cultural experiences and exceptional hospitality, creating memories that last a
             lifetime.</p>
-        <button class="cta-button">OUR STORY</button>
+        <button class="cta-button" onclick="location.href='about.html'">OUR STORY</button>
     </section>
     <section class="slider-container">
         <div class="slider-wrapper">
@@ -176,57 +178,59 @@
 
 
     <section class="cusin-section" id="dining">
-        <img src="./assets/img/cuisine.png" alt="Gochukha Hotel CUSINE" />
+        <img src="./assets/img/cuisine.png" alt="The Gochukha Hotel CUSINE" />
         <div class="text-content">
             <h5>CUSINE</h5>
-            <h2>SAVOR THE ESSENCE <br> OUR GOCHUKHA DINING PHILOSOPHY</h2>
+            <h2>SAVOR THE ESSENCE <br> THE GOCHUKHA DINING PHILOSOPHY</h2>
             <p>
-                At the newly launched Gochukha Hotel, we redefine dining with a personal touch.
+                At the newly launched The Gochukha Hotel, we redefine dining with a personal touch.
                 While we are yet to open a traditional restaurant, we offer exclusive experiences
                 tailored to your preferences. Enjoy thoughtfully curated food hampers or have a
                 private chef craft exceptional Bhutanese and international dishes just for you.
                 Using fresh, locally sourced ingredients, we aim to deliver flavors that are as
-                authentic as they are unforgettable. At Gochukha, every meal is a celebration of taste
+                authentic as they are unforgettable. At The Gochukha, every meal is a celebration of taste
                 and a promise of something truly unique.
             </p>
-            <button id="cus-btn" class="cta-button">DISCOVER OUR MENU</button>
+            <button id="cus-btn" class="cta-button" onclick="location.href='restaurant.html'">DISCOVER OUR MENU</button>
         </div>
     </section>
     <section class="gallery">
         <img src="./assets/img/slider2.png" alt="Gochuka Gallery">
         <div class="content">
             <h5>Gallery</h5>
-            <h1>Discover Gochukha Through Images</h1>
-            <p>Step into the world of Gochukha Hotel through our curated gallery. Explore the elegance of our interiors,
+            <h1>Discover The Gochukha Through Images</h1>
+            <p>Step into the world of The Gochukha Hotel through our curated gallery. Explore the elegance of our
+                interiors,
                 the
                 breathtaking views of Bhutan’s landscapes, and the moments that make every stay unforgettable. Let our
                 visuals inspire
                 your next visit and give you a glimpse of the serene luxury that awaits.</p>
-            <button class="cta-button" id="gal-btn">VIEW OUR GALLERY</button>
+            <button class="cta-button" id="gal-btn" onclick="location.href='gallery.html'">VIEW OUR GALLERY</button>
         </div>
 
     </section>
 
     <section class="cafe-section" id="cafe">
         <div class="text-content">
-            <h5>CUSINE</h5>
-            <h2>A TASTE OF GOCHUKHA CAFÉ</h2>
+            <h5>CUISINE</h5>
+            <h2>A TASTE OF THE GOCHUKHA CAFÉ</h2>
             <p>
-                Experience the charm of Gochukha Café through our gallery. From warm, inviting interiors to the artfully
+                Experience the charm of The Gochukha Café through our gallery. From warm, inviting interiors to the
+                artfully
                 crafted
                 beverages and dishes, every image tells a story of flavor, comfort, and connection. Take a closer look
                 at the spaces and
                 moments that make our café the perfect spot to relax and indulge.
             </p>
-            <button id="cafe-btn" class="cta-button">EXPLORE OUR CAFÉ</button>
+            <button id="cafe-btn" class="cta-button" onclick="location.href='cafe.html'">EXPLORE OUR CAFÉ</button>
         </div>
-        <img src="./assets/img/cafe.png" alt="Gochukha Hotel Cafe" />
+        <img src="./assets/img/cafe.png" alt="The Gochukha Hotel Cafe" />
     </section>
 
     <section class="booking-section" id="booking">
         <div class="header">
             <h2>
-                EXPERIENCE GOCHUKHA
+                EXPERIENCE THE GOCHUKHA
             </h2>
         </div>
         <div class="form">
@@ -249,7 +253,7 @@
                     </select>
                 </div>
                 <div class="form-group inline">
-                    <input type="number" id="guest-number" name="guest-number" placeholder="Number of Guest" min="1">
+                    <input type="number" id="guest-number" name="guest-number" placeholder="Number of Guests" min="1">
                 </div>
                 <div class="form-group inline">
                     <label for="checkin-date">Check-in Date</label>
@@ -260,8 +264,7 @@
                     <input type="date" id="checkout-date" name="checkout">
                 </div>
                 <div class="form-group">
-                    <textarea id="message" name="visitor_message"
-                        placeholder="Tell us anything else that might be important."></textarea>
+                    <textarea id="message" name="visitor_message" placeholder="Tell us anything important!"></textarea>
                 </div>
                 <div id="responseMessage" class="response-message"></div>
                 <button type="submit" class="cta-button" id="book-btn">BOOK NOW</button>
@@ -288,25 +291,21 @@
 
 
     <section class="footer">
-        <h3>Are you ready to stay at GOCHUKHA?</h3>
+        <h3>Are you ready to stay at THE GOCHUKHA?</h3>
         <div class="footer-row">
             <div class="footer-col">
                 <img src="./assets/img/Gochuka logo 2.png" alt="Gochuka Hotel">
                 <h4>Contact</h4>
-                <h3>Gochukha Resturant and Café <br>
-                    Bapi Lam 13, Babesa <br>
+                <h3>The Gochukha Restaurant and Café <br>
+                    Barpi Lam 13, Babesa <br>
                     Thimphu <br>
                     Bhutan</h3>
-
-                <h2 style="font-family: 'raleway' !important;">Phone +975 - 17123456 </h2>
-                <h2 style="font-family: 'raleway' !important;">Phone +975 - 77123456 </h2>
-                <h2 style="font-family: 'raleway' !important;">Whatsapp Reservation 17123456 </h2>
                 <div class="footer-socials">
-                    <a href="https://www.instagram.com" target="_blank" class="social-link"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/thegochukha.hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com" target="_blank" class="social-link"><i
                             class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i
+                    <a href="https://wa.me/+97577974563" target="_blank" class="social-link"><i
                             class="fab fa-whatsapp"></i></a>
                 </div>
 
@@ -314,12 +313,11 @@
             <div class="footer-col">
                 <h4>Navigation</h4>
                 <ul class="links">
-                    <li><a href="#">ACCOMODATION</a></li>
-                    <li><a href="#">RESTAURANT</a></li>
-                    <li><a href="#">BAR</a></li>
-                    <li><a href="#">CAFÉ</a></li>
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">BOOKING</a></li>
+                    <li><a href="#events">EVENTS</a></li>
+                    <li><a href="#rooms">ACCOMMODATION</a></li>
+                    <li><a href="#dining">RESTAURANT</a></li>
+                    <li><a href="#cafe">CAFÉ</a></li>
+                    <li><a href="#booking">BOOKING</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -337,7 +335,7 @@
         </div>
         <div class="last">
             <div class="last-col f">
-                <p>2024.GOCHUKHA.ALL RIGHT RESERVED</p>
+                <p>2024. THE GOCHUKHA. ALL RIGHTS RESERVED</p>
             </div>
             <div class="last-col s">
                 <p><a href="#">TERMS AND CONDITIONS. PRIVACY POLICY</a></p>

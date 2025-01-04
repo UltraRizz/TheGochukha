@@ -2,6 +2,10 @@ body {
   background-color: #3c3c3c;
 }
 
+.sticky-nav ul {
+  display: none !important;
+}
+
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -138,6 +142,9 @@ body {
 }
 
 @media (max-width: 500px) {
+  .sticky-nav ul {
+    display: block !important ;
+  }
   .album .img {
     max-width: 94%;
     margin: 0 0 25px 0;
@@ -322,6 +329,9 @@ body {
 }
 
 @media (max-width: 500px) {
+  .sticky-nav ul {
+    display: block !important;
+  }
   .wk-mobile-1 {
     width: 8.333333%;
   }

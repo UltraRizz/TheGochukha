@@ -214,6 +214,11 @@ body {
   width: 30%;
 }
 
+.facility-item i {
+  font-size: 2vw;
+  color: white;
+}
+
 .facility-item p {
   margin-top: 0.5rem;
   font-size: 1vw;
