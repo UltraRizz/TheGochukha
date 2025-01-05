@@ -1,0 +1,360 @@
+body {
+  background-color: #949494;
+}
+
+.hero-content {
+  margin-top: 10% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+.hero-content h5 {
+  color: #fff;
+  margin: 0;
+}
+
+.hero-content h1 {
+  width: 70%;
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+}
+.content-section {
+  margin-block: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section .text-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.content-section .text-content h5 {
+  color: #fff;
+}
+
+.content-section .text-content p {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+}
+.content-section .img {
+  margin-top: 3rem;
+  width: 60%;
+  object-fit: contain;
+}
+
+.content-section .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.culinary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  color: white;
+  margin: 4rem 0;
+}
+.culinary h5 {
+  color: #fff;
+  margin: 0;
+}
+.culinary h2 {
+  width: 50%;
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+}
+.culinary p {
+  width: 50%;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+}
+.menu-section {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #3c3c3c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.menu-section .menu_card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+}
+.menu_card .menu_card_img {
+  width: 35%;
+}
+.menu_card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.menu_card .menu_card_content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.menu_card_content .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu_card_content #content {
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+.menu_card_content img {
+  width: 30%;
+  object-fit: contain;
+  margin-block: 3vh;
+}
+.menu_card_content .content h5 {
+  color: #fff;
+  width: inherit;
+  margin-bottom: 1rem;
+}
+
+.menu_card_content .content a {
+  font-size: 2.3vw;
+  color: #fff;
+  font-weight: 100;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.menu_card_content .content a:hover {
+  color: #949494;
+  border-bottom: 1px solid #949494;
+}
+
+.menu_card_content .content .items {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.items .first {
+  display: flex;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.item-name {
+  font-size: 1.3vw;
+  color: #dab44d;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 1.3vw;
+  color: #dab44d;
+  margin: 0;
+}
+
+.line {
+  flex-grow: 1; /* Takes up the remaining space between item and price */
+  height: 1px; /* Thickness of the line */
+  background-color: #818181; /* Line color */
+  margin: 0 10px; /* Adjust spacing between the name and price */
+}
+
+.content .items .second p {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .hero-content h5 {
+    font-size: 3vw !important;
+  }
+  .content-section .text-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .content-section .text-content h5 {
+    text-align: center;
+    font-size: 3vw !important;
+  }
+  .content-section .text-content p {
+    text-align: center;
+    font-size: 3vw !important;
+  }
+  .content-section .img {
+    width: 100%;
+  }
+  .culinary {
+    margin: 2rem 2rem;
+  }
+  .culinary h5 {
+    font-size: 3vw !important;
+  }
+  .culinary h2 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .culinary p {
+    width: 100%;
+    font-size: 3vw !important;
+  }
+
+  .menu-section {
+    gap: 3rem;
+  }
+  .menu_card {
+    flex-direction: column;
+  }
+  .menu_card .menu_card_img {
+    width: 100%;
+  }
+  .menu_card_img:last-child {
+    display: none;
+  }
+  .menu_card .menu_card_content {
+    width: 80%;
+  }
+  .menu_card_content img {
+    display: none;
+  }
+  .menu_card_content .content {
+    gap: 1rem;
+    width: 100%;
+  }
+  .menu_card_content .content h5 {
+    font-size: 3vw !important;
+  }
+  .menu_card_content .content a {
+    font-size: 4vw !important;
+  }
+  .menu_card_content .content .items {
+    width: 100%;
+  }
+  .item-name {
+    font-size: 3vw !important;
+  }
+  .item-price {
+    font-size: 3vw !important;
+  }
+  .content .items .second p {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 1024px) {
+  .hero-content h1 {
+    width: 100%;
+    font-size: 6vw !important;
+  }
+  .hero-content h5 {
+    font-size: 3vw !important;
+  }
+  .content-section .text-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .content-section .text-content h5 {
+    text-align: center;
+    font-size: 3vw !important;
+  }
+  .content-section .text-content p {
+    text-align: center;
+    font-size: 2.5vw !important;
+  }
+  .content-section .img {
+    width: 100%;
+  }
+  .culinary {
+    margin: 2rem 2rem;
+  }
+  .culinary h5 {
+    font-size: 2vw !important;
+  }
+  .culinary h2 {
+    width: 100%;
+    font-size: 4vw !important;
+  }
+  .culinary p {
+    width: 100%;
+    font-size: 2.5vw !important;
+  }
+
+  .menu-section {
+    gap: 3rem;
+  }
+  .menu_card {
+    flex-direction: column;
+  }
+  .menu_card .menu_card_img {
+    width: 100%;
+  }
+  .menu_card_img:last-child {
+    display: none;
+  }
+  .menu_card .menu_card_content {
+    width: 80%;
+  }
+  .menu_card_content img {
+    display: none;
+  }
+  .menu_card_content .content {
+    gap: 1rem;
+    width: 100%;
+  }
+  .menu_card_content .content h5 {
+    font-size: 2vw !important;
+  }
+  .menu_card_content .content a {
+    font-size: 3vw !important;
+  }
+  .menu_card_content .content .items {
+    width: 100%;
+  }
+  .item-name {
+    font-size: 2vw !important;
+  }
+  .item-price {
+    font-size: 2vw !important;
+  }
+  .content .items .second p {
+    font-size: 2vw !important;
+  }
+}
