@@ -567,7 +567,7 @@ body {
     gap: 2rem;
   }
   .cusin-section img {
-    max-width: 100%;
+    width: 100%;
   }
   .text-content {
     max-width: 100%;
