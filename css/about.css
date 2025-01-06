@@ -178,7 +178,7 @@ body {
   }
   .descriptions {
     width: 90%;
-    height: 5vh;
+    height: 18vh;
     gap: 1rem;
   }
   .descriptions .key {
@@ -188,6 +188,7 @@ body {
     font-size: 2.5vw;
   }
   .hotel-section {
+    height: 20vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -262,7 +263,7 @@ body {
   }
   .descriptions {
     width: 90%;
-    height: 5vh;
+    height: 20vh;
     gap: 1rem;
   }
   .descriptions .key {

@@ -256,6 +256,7 @@ body {
     display: none;
   }
   .menu_card_content .content {
+    padding: 10% 0;
     gap: 1rem;
     width: 100%;
   }
@@ -336,6 +337,7 @@ body {
     display: none;
   }
   .menu_card_content .content {
+    padding: 10% 0;
     gap: 1rem;
     width: 100%;
   }

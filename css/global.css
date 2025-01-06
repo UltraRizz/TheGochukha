@@ -924,11 +924,21 @@ input[type="number"] {
     margin-bottom: 1vh;
     padding-bottom: 1vh;
   }
+  .menu {
+    font-size: 2vw;
+  }
+  .Text a {
+    font-size: 2vw !important;
+  }
+
+  .sticky-nav ul li a {
+    font-size: 1.5vw;
+  }
   .title {
     display: none;
   }
   .name h1 {
-    font-size: 4vw;
+    font-size: 6vw;
     letter-spacing: 1rem;
   }
 
