@@ -90,11 +90,10 @@ body {
   letter-spacing: 0.1rem;
 }
 .menu-section {
-  margin-top: 5rem;
-  padding-bottom: 5rem;
   background-color: #3c3c3c;
   width: 100%;
   display: flex;
+  gap: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -140,7 +139,6 @@ body {
 .menu_card_content img {
   width: 30%;
   object-fit: contain;
-  padding-block: 3rem;
 }
 .menu_card_content .content h5 {
   width: inherit;
