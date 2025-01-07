@@ -142,7 +142,8 @@ body {
   object-fit: contain;
 }
 .menu_card_content .content h5 {
-  width: inherit;
+  margin-top: 5%;
+  width: 100%;
   color: #fff;
   margin-bottom: 1rem;
 }
